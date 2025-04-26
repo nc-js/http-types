@@ -1,7 +1,7 @@
 import { toPascalCase } from '@std/text'
 import { union } from '@nc/typegen/composite'
 import { alias, exclude, exportThis } from '@nc/typegen/types'
-import { singleQuoteLit, stringLits } from '@nc/typegen/strings'
+import { singleQuoteLit } from '@nc/typegen/strings'
 import {
 	aliasWithDocBlock,
 	appendTextFile,
@@ -81,10 +81,10 @@ function forbiddenRequestField(destPath: string, fields: string[]): void {
 function forbiddenResponseField(destPath: string): void {
 	const forbiddenResponseField = exportThis(alias(
 		'HttpForbiddenResponseField',
-		union(stringLits([
+		union([
 			'HttpHeaderSetCookie',
 			'HttpHeaderSetCookie2',
-		])),
+		]),
 	))
 	appendTextFile(
 		destPath,
