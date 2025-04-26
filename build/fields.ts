@@ -64,13 +64,11 @@ function topAliases(
 		const [key, value] = entry
 		let definition: Stringable
 
-		if (key === 'HttpField' && typeof value.definition === 'function') {
-			definition = value.definition(fields)
-		} else if (
-			key === 'HttpForbiddenRequestField' &&
-			typeof value.definition === 'function'
-		) {
-			definition = value.definition(forbiddenRequestFields)
+		if (typeof value.definition === 'function') {
+			const inputTypes = key === 'HttpForbiddenRequestField'
+				? forbiddenRequestFields
+				: fields
+			definition = value.definition(inputTypes)
 		} else {
 			definition = value.definition
 		}
