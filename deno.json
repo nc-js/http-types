@@ -15,7 +15,7 @@
 	"tasks": {
 		"build": "deno task \"build-*\" ; deno fmt",
 		"build-methods": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/methods.ts",
-		"build-headers": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/headers.ts",
+		"build-fields": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/fields.ts",
 		"build-status-codes": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/status-codes.ts",
 		"dev": "deno test --watch src/mod.ts"
 	},

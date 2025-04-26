@@ -3,28 +3,28 @@ import { union } from '@nc/typegen/composite'
 import { alias, exportThis } from '@nc/typegen/types'
 import { singleQuoteLit } from '@nc/typegen/strings'
 import { appendTextFile, generate } from './utils/generator.ts'
-import { httpDocs, isForbiddenRequestHeader } from './utils/http.ts'
+import { httpDocs, isForbiddenRequestField } from './utils/http.ts'
 
 generate({
-	path: 'headers.ts',
+	path: 'fields.ts',
 	conceptIdent: 'http-header',
-	conceptName: 'HTTP headers',
+	conceptName: 'HTTP fields',
 
 	generateFn: (destPath, concept): void => {
-		const headerTypes: string[] = []
-		const forbiddenRequestHeaders: string[] = []
+		const fieldTypes: string[] = []
+		const forbiddenRequestFields: string[] = []
 
 		for (const conceptValue of concept.values) {
-			const headerName = toPascalCase(conceptValue.value)
-			const headerTypeName = `HttpHeader${headerName}`
-			headerTypes.push(headerTypeName)
+			const fieldName = toPascalCase(conceptValue.value)
+			const fieldTypeName = `HttpField${fieldName}`
+			fieldTypes.push(fieldTypeName)
 
 			const typeAlias = exportThis(
-				alias(headerTypeName, singleQuoteLit(headerName)),
+				alias(fieldTypeName, singleQuoteLit(fieldName)),
 			)
 
-			if (isForbiddenRequestHeader(headerName)) {
-				forbiddenRequestHeaders.push(headerName)
+			if (isForbiddenRequestField(fieldName)) {
+				forbiddenRequestFields.push(fieldName)
 			}
 
 			const docBlock = httpDocs(conceptValue)
@@ -32,8 +32,8 @@ generate({
 		}
 
 		const topAlias = exportThis(alias(
-			'HttpHeader',
-			union(headerTypes, 0),
+			'HttpField',
+			union(fieldTypes, 0),
 			true,
 		))
 		appendTextFile(destPath, topAlias + '\n')

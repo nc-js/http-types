@@ -48,12 +48,12 @@ export const getMethodTypeName = (method: string): string => {
 	}
 }
 
-export const isForbiddenRequestHeader = (header: string): boolean =>
-	header.startsWith('Proxy') ||
-	header.startsWith('Sec') ||
-	binarySearch(ForbiddenHttpRequestHeaders, header)
+export const isForbiddenRequestField = (field: string): boolean =>
+	field.startsWith('Proxy') ||
+	field.startsWith('Sec') ||
+	binarySearch(ForbiddenHttpRequestField, field)
 
-const ForbiddenHttpRequestHeaders = [
+const ForbiddenHttpRequestField = [
 	'Accept-Charset',
 	'Accept-Encoding',
 	'Access-Control-Request-Headers',
