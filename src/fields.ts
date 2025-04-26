@@ -3270,3 +3270,56 @@ export type HttpField =
 	| HttpFieldXFrameOptions
 	| HttpFieldTraceparent
 	| HttpFieldTracestate
+
+export type HttpForbiddenRequestField =
+	| HttpFieldAcceptCharset
+	| HttpFieldAcceptEncoding
+	| HttpFieldAccessControlRequestHeaders
+	| HttpFieldAccessControlRequestMethod
+	| HttpFieldConnection
+	| HttpFieldContentLength
+	| HttpFieldCookie
+	| HttpFieldDnt
+	| HttpFieldDate
+	| HttpFieldExpect
+	| HttpFieldFeaturePolicy
+	| HttpFieldHost
+	| HttpFieldOrigin
+	| HttpFieldProxyAuthenticate
+	| HttpFieldProxyAuthenticationInfo
+	| HttpFieldProxyAuthorization
+	| HttpFieldProxyFeatures
+	| HttpFieldProxyInstruction
+	| HttpFieldProxyStatus
+	| HttpFieldReferer
+	| HttpFieldSecChForcedColors
+	| HttpFieldSecChPrefersColorScheme
+	| HttpFieldSecChPrefersContrast
+	| HttpFieldSecChPrefersReducedData
+	| HttpFieldSecChPrefersReducedMotion
+	| HttpFieldSecChUaArch
+	| HttpFieldSecChUaBitness
+	| HttpFieldSecChUaFullVersion
+	| HttpFieldSecChUaFullVersionList
+	| HttpFieldSecChUaMobile
+	| HttpFieldSecChUaModel
+	| HttpFieldSecChUaPlatform
+	| HttpFieldSecChUaPlatformVersion
+	| HttpFieldSecChUaWoW64
+	| HttpFieldSecCowl
+	| HttpFieldSecFetchDest
+	| HttpFieldSecFetchMode
+	| HttpFieldSecFetchSite
+	| HttpFieldSecFetchUser
+	| HttpFieldSecTokenBinding
+	| HttpFieldSecWebSocketAccept
+	| HttpFieldSecWebSocketExtensions
+	| HttpFieldSecWebSocketKey
+	| HttpFieldSecWebSocketProtocol
+	| HttpFieldSecWebSocketVersion
+	| HttpFieldSecurityScheme
+	| HttpFieldTe
+	| HttpFieldTrailer
+	| HttpFieldTransferEncoding
+	| HttpFieldUpgrade
+	| HttpFieldVia

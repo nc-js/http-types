@@ -28,18 +28,25 @@ generate({
 			)
 
 			if (isForbiddenRequestField(fieldName)) {
-				forbiddenRequestFields.push(fieldName)
+				forbiddenRequestFields.push(fieldTypeName)
 			}
 
 			const docBlock = httpDocs(conceptValue)
 			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
-		const topAlias = exportThis(alias(
+		const fieldUnion = exportThis(alias(
 			'HttpField',
 			union(fieldTypes, 0),
 			true,
 		))
-		appendTextFile(destPath, topAlias + '\n')
+		appendTextFile(destPath, fieldUnion + '\n\n')
+
+		const forbiddenRequestFieldUnion = exportThis(alias(
+			'HttpForbiddenRequestField',
+			union(forbiddenRequestFields, 0),
+			true,
+		))
+		appendTextFile(destPath, forbiddenRequestFieldUnion + '\n')
 	},
 })

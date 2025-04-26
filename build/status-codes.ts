@@ -1,7 +1,11 @@
 import { union } from '@nc/typegen/composite'
 import { alias, exportThis } from '@nc/typegen/types'
 import { httpDocs } from './utils/http.ts'
-import { appendTextFile, generate } from './utils/generator.ts'
+import {
+	aliasWithDocBlock,
+	appendTextFile,
+	generate,
+} from './utils/generator.ts'
 
 type Digit = '1' | '2' | '3' | '4' | '5'
 
@@ -38,7 +42,7 @@ generate({
 				alias(statusCodeTypeName, statusCodeName),
 			)
 			const docBlock = httpDocs(conceptValue)
-			appendTextFile(destPath, `${docBlock}\n${typeAlias}\n\n`)
+			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 
 			const digit = statusCodeName[0]
 			categorized[digit as Digit].push(statusCodeTypeName)
