@@ -5,22 +5,18 @@ import { DocBlock } from './docs.ts'
 
 const labelProvider = new UrlLabelProvider([W3Org, Wicg, Ietf])
 
-export const httpDocs = (conceptValue: ConceptValue): string => {
+export const httpDocs = (conceptValue: ConceptValue): DocBlock => {
 	const docBlock = new DocBlock()
 	docBlock.summary = conceptValue.details[0].description
 
 	for (const detail of conceptValue.details) {
-		docBlock.see(
-			new URL(detail.specification),
-			`Specification → ${labelProvider.provideLabel(detail, false)}`,
-		)
 		docBlock.see(
 			new URL(detail.documentation),
 			`Documentation → ${labelProvider.provideLabel(detail, true)}`,
 		)
 	}
 
-	return docBlock.toString()
+	return docBlock
 }
 
 export const getMethodTypeName = (method: string): string => {

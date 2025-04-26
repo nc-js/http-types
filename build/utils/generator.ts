@@ -55,5 +55,5 @@ export const generate = (options: GenerateOptions): void => {
 	console.timeEnd(conceptIdent)
 }
 
-export const aliasWithDocBlock = (docBlock: string, alias: string): string =>
+export const aliasWithDocBlock = (docBlock: DocBlock, alias: string): string =>
 	`${docBlock}\n${alias}\n\n`

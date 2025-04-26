@@ -13,7 +13,6 @@
  * MUST contain an If-None-Match header field, listing one or
  * more entity tags from prior responses for the request-URI.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3229 | Specification → RFC 3229}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3229#section-10.5.3 | Documentation → RFC 3229 §10.5.3}
  */
 export type HttpFieldAIm = 'A-IM'
@@ -24,7 +23,6 @@ export type HttpFieldAIm = 'A-IM'
  * client intends to use within the tunnel, or a set of
  * protocols that might be used within the tunnel.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7639 | Specification → RFC 7639}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7639#section-2 | Documentation → RFC 7639 §2}
  */
 export type HttpFieldAlpn = 'ALPN'
@@ -36,7 +34,6 @@ export type HttpFieldAlpn = 'ALPN'
  * specifically limited to a small set of desired types, as in
  * the case of a request for an in-line image.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.3.2 | Documentation → RFC 7231 §5.3.2}
  */
 export type HttpFieldAccept = 'Accept'
@@ -48,9 +45,7 @@ export type HttpFieldAccept = 'Accept'
  * actions on the part of the automated pot. For this reason,
  * HTCPCP adds a new header field, "Accept-Additions".
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2324 | Specification → RFC 2324}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2324#section-2.2.2.1 | Documentation → RFC 2324 §2.2.2.1}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7168 | Specification → RFC 7168}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7168#section-2.2.1 | Documentation → RFC 7168 §2.2.1}
  */
 export type HttpFieldAcceptAdditions = 'Accept-Additions'
@@ -60,7 +55,6 @@ export type HttpFieldAcceptAdditions = 'Accept-Additions'
  * meta element with http-equiv attribute (HTML5) indicate
  * server support for particular hints indicated in its value.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-client-hints | Specification → Internet Draft ietf-httpbis-client-hints}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-hints#section-3.1 | Documentation → Internet Draft ietf-httpbis-client-hints §3.1}
  */
 export type HttpFieldAcceptCh = 'Accept-CH'
@@ -73,7 +67,6 @@ export type HttpFieldAcceptCh = 'Accept-CH'
  * to signal that capability to an origin server that is
  * capable of representing information in those charsets.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.3.3 | Documentation → RFC 7231 §5.3.3}
  */
 export type HttpFieldAcceptCharset = 'Accept-Charset'
@@ -86,7 +79,6 @@ export type HttpFieldAcceptCharset = 'Accept-Charset'
  * an Original Resource, and its value indicates the datetime
  * of the desired past state of the Original Resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7089 | Specification → RFC 7089}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7089#section-2.1.1 | Documentation → RFC 7089 §2.1.1}
  */
 export type HttpFieldAcceptDatetime = 'Accept-Datetime'
@@ -100,9 +92,7 @@ export type HttpFieldAcceptDatetime = 'Accept-Datetime'
  * associated request. A field value that only contains
  * "identity" implies that no content codings were supported.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7694 | Specification → RFC 7694}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7694#section-3 | Documentation → RFC 7694 §3}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.3.4 | Documentation → RFC 7231 §5.3.4}
  */
 export type HttpFieldAcceptEncoding = 'Accept-Encoding'
@@ -114,7 +104,6 @@ export type HttpFieldAcceptEncoding = 'Accept-Encoding'
  * Servers can use this information when running a remote
  * variant selection algorithm.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2295 | Specification → RFC 2295}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2295#section-8.2 | Documentation → RFC 2295 §8.2}
  */
 export type HttpFieldAcceptFeatures = 'Accept-Features'
@@ -124,7 +113,6 @@ export type HttpFieldAcceptFeatures = 'Accept-Features'
  * client to indicate its acceptance of indefinite-sized range
  * requests for a resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/combs-http-indeterminate-range | Specification → Internet Draft combs-http-indeterminate-range}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-combs-http-indeterminate-range#section-2.1 | Documentation → Internet Draft combs-http-indeterminate-range §2.1}
  */
 export type HttpFieldAcceptIndefiniteRanges = 'Accept-Indefinite-Ranges'
@@ -134,7 +122,6 @@ export type HttpFieldAcceptIndefiniteRanges = 'Accept-Indefinite-Ranges'
  * agents to indicate the set of natural languages that are
  * preferred in the response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.3.5 | Documentation → RFC 7231 §5.3.5}
  */
 export type HttpFieldAcceptLanguage = 'Accept-Language'
@@ -148,7 +135,6 @@ export type HttpFieldAcceptLanguage = 'Accept-Language'
  * response to any method is an implicit indication that PATCH
  * is allowed on the resource identified by the Request-URI.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/5789 | Specification → RFC 5789}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc5789#section-3.1 | Documentation → RFC 5789 §3.1}
  */
 export type HttpFieldAcceptPatch = 'Accept-Patch'
@@ -163,7 +149,6 @@ export type HttpFieldAcceptPatch = 'Accept-Patch'
  * that specific format is allowed on POST requests to the
  * resource identified by the Request-URI.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/ldp | Specification → Linked Data Platform 1.0}
  * @see {@link https://www.w3.org/TR/ldp/#header-accept-post | Documentation → Linked Data Platform 1.0}
  */
 export type HttpFieldAcceptPost = 'Accept-Post'
@@ -175,7 +160,6 @@ export type HttpFieldAcceptPost = 'Accept-Post'
  * specify several profiles and use quality indicators
  * (q-values) to indicate preferences.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/svensson-profiled-representations | Specification → Internet Draft svensson-profiled-representations}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-svensson-profiled-representations#section-4 | Documentation → Internet Draft svensson-profiled-representations §4}
  */
 export type HttpFieldAcceptProfile = 'Accept-Profile'
@@ -187,7 +171,6 @@ export type HttpFieldAcceptProfile = 'Accept-Profile'
  * that the client expects the server to use when processing
  * the request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ruellan-http-accept-push-policy | Specification → Internet Draft ruellan-http-accept-push-policy}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ruellan-http-accept-push-policy#section-3.1 | Documentation → Internet Draft ruellan-http-accept-push-policy §3.1}
  */
 export type HttpFieldAcceptPushPolicy = 'Accept-Push-Policy'
@@ -198,7 +181,6 @@ export type HttpFieldAcceptPushPolicy = 'Accept-Push-Policy'
  * identifying the specific query format media type(s) that may
  * be used.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-safe-method-w-body | Specification → Internet Draft ietf-httpbis-safe-method-w-body}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body#section-3 | Documentation → Internet Draft ietf-httpbis-safe-method-w-body §3}
  */
 export type HttpFieldAcceptQuery = 'Accept-Query'
@@ -207,7 +189,6 @@ export type HttpFieldAcceptQuery = 'Accept-Query'
  * The "Accept-Ranges" header field allows a server to indicate
  * that it supports range requests for the target resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7233 | Specification → RFC 7233}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7233#section-2.3 | Documentation → RFC 7233 §2.3}
  */
 export type HttpFieldAcceptRanges = 'Accept-Ranges'
@@ -219,7 +200,6 @@ export type HttpFieldAcceptRanges = 'Accept-Ranges'
  * of the target HTTP message. Each member describes a single
  * message signature.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures | Specification → Internet Draft ietf-httpbis-message-signatures}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1 | Documentation → Internet Draft ietf-httpbis-message-signatures §5.1}
  */
 export type HttpFieldAcceptSignature = 'Accept-Signature'
@@ -231,7 +211,6 @@ export type HttpFieldAcceptSignature = 'Accept-Signature'
  * preflight request it indicates that the actual request can
  * include user credentials.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-allow-credentials | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlAllowCredentials =
@@ -242,7 +221,6 @@ export type HttpFieldAccessControlAllowCredentials =
  * of the response to a preflight request, which header field
  * names can be used during the actual request.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-allow-headers | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlAllowHeaders = 'Access-Control-Allow-Headers'
@@ -252,7 +230,6 @@ export type HttpFieldAccessControlAllowHeaders = 'Access-Control-Allow-Headers'
  * of the response to a preflight request, which methods can be
  * used during the actual request.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-allow-methods | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlAllowMethods = 'Access-Control-Allow-Methods'
@@ -262,7 +239,6 @@ export type HttpFieldAccessControlAllowMethods = 'Access-Control-Allow-Methods'
  * resource can be shared based by returning the value of the
  * Origin request header, "*", or "null" in the response.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-allow-origin | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlAllowOrigin = 'Access-Control-Allow-Origin'
@@ -272,7 +248,6 @@ export type HttpFieldAccessControlAllowOrigin = 'Access-Control-Allow-Origin'
  * headers are safe to expose to the API of a CORS API
  * specification.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-expose-headers | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlExposeHeaders =
@@ -283,7 +258,6 @@ export type HttpFieldAccessControlExposeHeaders =
  * results of a preflight request can be cached in a preflight
  * result cache.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-max-age | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlMaxAge = 'Access-Control-Max-Age'
@@ -293,7 +267,6 @@ export type HttpFieldAccessControlMaxAge = 'Access-Control-Max-Age'
  * headers will be used in the actual request as part of the
  * preflight request.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-request-headers | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlRequestHeaders =
@@ -304,7 +277,6 @@ export type HttpFieldAccessControlRequestHeaders =
  * method will be used in the actual request as part of the
  * preflight request.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-access-control-request-method | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldAccessControlRequestMethod =
@@ -315,7 +287,6 @@ export type HttpFieldAccessControlRequestMethod =
  * amount of time since the response was generated or
  * successfully validated at the origin server.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7234 | Specification → RFC 7234}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7234#section-5.1 | Documentation → RFC 7234 §5.1}
  */
 export type HttpFieldAge = 'Age'
@@ -326,7 +297,6 @@ export type HttpFieldAge = 'Age'
  * field is strictly to inform the recipient of valid request
  * methods associated with the resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.4.1 | Documentation → RFC 7231 §7.4.1}
  */
 export type HttpFieldAllow = 'Allow'
@@ -336,7 +306,6 @@ export type HttpFieldAllow = 'Allow'
  * alternative services to clients by adding an Alt-Svc header
  * field to responses.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7838 | Specification → RFC 7838}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7838#section-3 | Documentation → RFC 7838 §3}
  */
 export type HttpFieldAltSvc = 'Alt-Svc'
@@ -352,7 +321,6 @@ export type HttpFieldAltSvc = 'Alt-Svc'
  * introducing this information after a protocol is in use has
  * proven to be problematic.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7838 | Specification → RFC 7838}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7838#section-5 | Documentation → RFC 7838 §5}
  */
 export type HttpFieldAltUsed = 'Alt-Used'
@@ -367,7 +335,6 @@ export type HttpFieldAltUsed = 'Alt-Used'
  * from resources which do not support transparent content
  * negotiation MAY also use Alternates headers.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2295 | Specification → RFC 2295}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2295#section-8.3 | Documentation → RFC 2295 §8.3}
  */
 export type HttpFieldAlternates = 'Alternates'
@@ -378,7 +345,6 @@ export type HttpFieldAlternates = 'Alternates'
  * and set to "T", the request MUST be applied to the reference
  * resource itself, and a 3xx response MUST NOT be returned.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4437 | Specification → RFC 4437}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4437#section-12.2 | Documentation → RFC 4437 §12.2}
  */
 export type HttpFieldApplyToRedirectRef = 'Apply-To-Redirect-Ref'
@@ -388,7 +354,6 @@ export type HttpFieldApplyToRedirectRef = 'Apply-To-Redirect-Ref'
  * control of the client behavior for Web applications using an
  * HTTP authentication protocol.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8053 | Specification → RFC 8053}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8053#section-4 | Documentation → RFC 8053 §4}
  */
 export type HttpFieldAuthenticationControl = 'Authentication-Control'
@@ -400,7 +365,6 @@ export type HttpFieldAuthenticationControl = 'Authentication-Control'
  * information can include a finalization message from the
  * server (e.g., it can contain the server authentication).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7615 | Specification → RFC 7615}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7615#section-3 | Documentation → RFC 7615 §3}
  */
 export type HttpFieldAuthenticationInfo = 'Authentication-Info'
@@ -413,11 +377,8 @@ export type HttpFieldAuthenticationInfo = 'Authentication-Info'
  * WWW-Authenticate response header field for the entity being
  * requested.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7616 | Specification → RFC 7616}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7616#section-3.4 | Documentation → RFC 7616 §3.4}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/5849 | Specification → RFC 5849}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc5849#section-3.5.1 | Documentation → RFC 5849 §3.5.1}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7235 | Specification → RFC 7235}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7235#section-4.1 | Documentation → RFC 7235 §4.1}
  */
 export type HttpFieldAuthorization = 'Authorization'
@@ -429,7 +390,6 @@ export type HttpFieldAuthorization = 'Authorization'
  * indicate to the server that it has a dictionary available to
  * use for compression.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary | Specification → Internet Draft ietf-httpbis-compression-dictionary}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2 | Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.2}
  */
 export type HttpFieldAvailableDictionary = 'Available-Dictionary'
@@ -439,7 +399,6 @@ export type HttpFieldAvailableDictionary = 'Available-Dictionary'
  * hop-by-hop mandatory extension declarations in the request
  * were fulfilled.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.3 | Documentation → RFC 2774 §4.3}
  */
 export type HttpFieldCExt = 'C-Ext'
@@ -456,7 +415,6 @@ export type HttpFieldCExt = 'C-Ext'
  * header fields are to be included as Connection header field
  * directives.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.2 | Documentation → RFC 2774 §4.2}
  */
 export type HttpFieldCMan = 'C-Man'
@@ -477,7 +435,6 @@ export type HttpFieldCMan = 'C-Man'
  * header fields are to be included as Connection header field
  * directives.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.2 | Documentation → RFC 2774 §4.2}
  */
 export type HttpFieldCOpt = 'C-Opt'
@@ -488,7 +445,6 @@ export type HttpFieldCOpt = 'C-Opt'
  * field is a hop-by-hop header field and must not be
  * communicated by proxies over further connections.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-http-pep | Specification → PEP - an Extension Mechanism for HTTP}
  * @see {@link https://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743948 | Documentation → PEP - an Extension Mechanism for HTTP}
  */
 export type HttpFieldCPep = 'C-PEP'
@@ -499,7 +455,6 @@ export type HttpFieldCPep = 'C-PEP'
  * hop-by-hop header field and MUST NOT be communicated by
  * proxies over further connections.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-http-pep | Specification → PEP - an Extension Mechanism for HTTP}
  * @see {@link https://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743954 | Documentation → PEP - an Extension Mechanism for HTTP}
  */
 export type HttpFieldCPepInfo = 'C-PEP-Info'
@@ -513,7 +468,6 @@ export type HttpFieldCPepInfo = 'C-PEP-Info'
  * operate on behalf of an origin server (commonly called a
  * CDN).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/9213 | Specification → RFC 9213}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc9213#section-3 | Documentation → RFC 9213 §3}
  */
 export type HttpFieldCdnCacheControl = 'CDN-Cache-Control'
@@ -525,7 +479,6 @@ export type HttpFieldCdnCacheControl = 'CDN-Cache-Control'
  * a directive in a request does not imply that the same
  * directive is to be given in the response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7234 | Specification → RFC 7234}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7234#section-5.2 | Documentation → RFC 7234 §5.2}
  */
 export type HttpFieldCacheControl = 'Cache-Control'
@@ -536,7 +489,6 @@ export type HttpFieldCacheControl = 'Cache-Control'
  * responses in HTTP caches by associating them with one or
  * more opaque strings.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups | Specification → Internet Draft ietf-httpbis-cache-groups}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-2 | Documentation → Internet Draft ietf-httpbis-cache-groups §2}
  */
 export type HttpFieldCacheGroups = 'Cache-Groups'
@@ -545,7 +497,6 @@ export type HttpFieldCacheGroups = 'Cache-Groups'
  * The "Cache-Group-Invalidation" response header that allows a
  * state-changing response to trigger a group invalidation.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups | Specification → Internet Draft ietf-httpbis-cache-groups}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-3 | Documentation → Internet Draft ietf-httpbis-cache-groups §3}
  */
 export type HttpFieldCacheGroupInvalidation = 'Cache-Group-Invalidation'
@@ -557,7 +508,6 @@ export type HttpFieldCacheGroupInvalidation = 'Cache-Group-Invalidation'
  * field is used. The new header field carries an SHA-256
  * value.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/drechsler-httpbis-improved-caching | Specification → Internet Draft drechsler-httpbis-improved-caching}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-drechsler-httpbis-improved-caching#section-2.1 | Documentation → Internet Draft drechsler-httpbis-improved-caching §2.1}
  */
 export type HttpFieldCacheNt = 'Cache-NT'
@@ -567,7 +517,6 @@ export type HttpFieldCacheNt = 'Cache-NT'
  * caches have handled that response and its corresponding
  * request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-header | Specification → Internet Draft ietf-httpbis-cache-header}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-header#section-2 | Documentation → Internet Draft ietf-httpbis-cache-header §2}
  */
 export type HttpFieldCacheStatus = 'Cache-Status'
@@ -579,7 +528,6 @@ export type HttpFieldCacheStatus = 'Cache-Status'
  * successful POST request with an action set to attachment-add
  * or attachment-update.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-calext-caldav-attachments | Specification → Internet Draft ietf-calext-caldav-attachments}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-calext-caldav-attachments#section-5.1 | Documentation → Internet Draft ietf-calext-caldav-attachments §5.1}
  */
 export type HttpFieldCalManagedId = 'Cal-Managed-ID'
@@ -589,7 +537,6 @@ export type HttpFieldCalManagedId = 'Cal-Managed-ID'
  * signal to the user agent that it ought to remove all data of
  * a certain set of types.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/clear-site-data | Specification → Clear Site Data}
  * @see {@link https://www.w3.org/TR/clear-site-data/#header | Documentation → Clear Site Data}
  */
 export type HttpFieldClearSiteData = 'Clear-Site-Data'
@@ -601,7 +548,6 @@ export type HttpFieldClearSiteData = 'Clear-Site-Data'
  * HTTP header field. This field contains the end-entity
  * certificate used by the client in the TLS handshake.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-client-cert-field | Specification → Internet Draft ietf-httpbis-client-cert-field}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field#section-2.2 | Documentation → Internet Draft ietf-httpbis-client-cert-field §2.2}
  */
 export type HttpFieldClientCert = 'Client-Cert'
@@ -616,7 +562,6 @@ export type HttpFieldClientCert = 'Client-Cert'
  * TLS handshake. These certificates might or might not have
  * been provided by the client during the TLS handshake.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-client-cert-field | Specification → Internet Draft ietf-httpbis-client-cert-field}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field#section-2.3 | Documentation → Internet Draft ietf-httpbis-client-cert-field §2.3}
  */
 export type HttpFieldClientCertChain = 'Client-Cert-Chain'
@@ -627,7 +572,6 @@ export type HttpFieldClientCertChain = 'Client-Cert-Chain'
  * might conflict with the "close" connection option of the
  * Connection header field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-8.1 | Documentation → RFC 7230 §8.1}
  */
 export type HttpFieldClose = 'Close'
@@ -639,7 +583,6 @@ export type HttpFieldClose = 'Close'
  * MUST remove or replace any received connection options
  * before forwarding the message.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-6.1 | Documentation → RFC 7230 §6.1}
  */
 export type HttpFieldConnection = 'Connection'
@@ -650,13 +593,11 @@ export type HttpFieldConnection = 'Connection'
  * This header field is described as Base in RFC 1808, which is
  * expected to be revised.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2068 | Specification → RFC 2068}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2068#section-14.11 | Documentation → RFC 2068 §14.11}
  */
 export type HttpFieldContentBase = 'Content-Base'
 
 /**
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary | Specification → Internet Draft ietf-httpbis-compression-dictionary}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4 | Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.4}
  */
 export type HttpFieldContentDictionary = 'Content-Dictionary'
@@ -666,7 +607,6 @@ export type HttpFieldContentDictionary = 'Content-Dictionary'
  * responses to communicate digests that are calculated using a
  * hashing algorithm applied to the actual message content.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers | Specification → Internet Draft ietf-httpbis-digest-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-2 | Documentation → Internet Draft ietf-httpbis-digest-headers §2}
  */
 export type HttpFieldContentDigest = 'Content-Digest'
@@ -678,7 +618,6 @@ export type HttpFieldContentDigest = 'Content-Digest'
  * metadata, such as the filename to use when saving the
  * response payload locally.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6266 | Specification → RFC 6266}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6266#section-4 | Documentation → RFC 6266 §4}
  */
 export type HttpFieldContentDisposition = 'Content-Disposition'
@@ -693,7 +632,6 @@ export type HttpFieldContentDisposition = 'Content-Disposition'
  * representation's data to be compressed without losing the
  * identity of its underlying media type.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.2.2 | Documentation → RFC 7231 §3.1.2.2}
  */
 export type HttpFieldContentEncoding = 'Content-Encoding'
@@ -704,7 +642,6 @@ export type HttpFieldContentEncoding = 'Content-Encoding'
  * Note that this might not be equivalent to all the languages
  * used within the representation.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.3.2 | Documentation → RFC 7231 §3.1.3.2}
  */
 export type HttpFieldContentLanguage = 'Content-Language'
@@ -720,7 +657,6 @@ export type HttpFieldContentLanguage = 'Content-Language'
  * payload body, the Content-Length indicates the size of the
  * selected representation (Section 3 of [Part2]).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-3.3.2 | Documentation → RFC 7230 §3.3.2}
  */
 export type HttpFieldContentLength = 'Content-Length'
@@ -734,7 +670,6 @@ export type HttpFieldContentLength = 'Content-Length'
  * generation, then a 200 (OK) response would contain the same
  * representation that is enclosed as payload in this message.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.4.2 | Documentation → RFC 7231 §3.1.4.2}
  */
 export type HttpFieldContentLocation = 'Content-Location'
@@ -744,7 +679,6 @@ export type HttpFieldContentLocation = 'Content-Location'
  * content to verify the integrity of the message body that's
  * been transmitted.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/1864 | Specification → RFC 1864}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc1864#section-1 | Documentation → RFC 1864 §1}
  */
 export type HttpFieldContentMd5 = 'Content-MD5'
@@ -754,9 +688,7 @@ export type HttpFieldContentMd5 = 'Content-MD5'
  * entity-body to specify where in the full entity-body the
  * partial body should be applied.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/combs-http-indeterminate-range | Specification → Internet Draft combs-http-indeterminate-range}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-combs-http-indeterminate-range#section-2.2 | Documentation → Internet Draft combs-http-indeterminate-range §2.2}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7233 | Specification → RFC 7233}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7233#section-4.2 | Documentation → RFC 7233 §4.2}
  */
 export type HttpFieldContentRange = 'Content-Range'
@@ -766,9 +698,7 @@ export type HttpFieldContentRange = 'Content-Range'
  * the preferred mechanism for delivering a policy from a
  * server to a client.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/CSP3 | Specification → Content Security Policy Level 3}
  * @see {@link https://www.w3.org/TR/CSP3/#csp-header | Documentation → Content Security Policy Level 3}
- * @see {@link https://webconcepts.info/specs/W3C/TR/CSP2 | Specification → Content Security Policy Level 2}
  * @see {@link https://www.w3.org/TR/CSP2/#content-security-policy-header-field | Documentation → Content Security Policy Level 2}
  */
 export type HttpFieldContentSecurityPolicy = 'Content-Security-Policy'
@@ -780,7 +710,6 @@ export type HttpFieldContentSecurityPolicy = 'Content-Security-Policy'
  * Content-Security-Policy header (as described in the "Pin a
  * policy to response" algorithm).
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/csp-pinning | Specification → Content Security Policy Pinning}
  * @see {@link https://www.w3.org/TR/csp-pinning/#content-security-policy-pin-header-field | Documentation → Content Security Policy Pinning}
  */
 export type HttpFieldContentSecurityPolicyPin = 'Content-Security-Policy-Pin'
@@ -790,9 +719,7 @@ export type HttpFieldContentSecurityPolicyPin = 'Content-Security-Policy-Pin'
  * field allows web developers to experiment with policies by
  * monitoring (but not enforcing) their effects.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/CSP3 | Specification → Content Security Policy Level 3}
  * @see {@link https://www.w3.org/TR/CSP3/#cspro-header | Documentation → Content Security Policy Level 3}
- * @see {@link https://webconcepts.info/specs/W3C/TR/CSP2 | Specification → Content Security Policy Level 2}
  * @see {@link https://www.w3.org/TR/CSP2/#content-security-policy-report-only-header-field | Documentation → Content Security Policy Level 2}
  */
 export type HttpFieldContentSecurityPolicyReportOnly =
@@ -805,7 +732,6 @@ export type HttpFieldContentSecurityPolicyReportOnly =
  * with a Content-Security-Policy-Report-Only header (as
  * described in the "Pin a policy to response" algorithm).
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/csp-pinning | Specification → Content Security Policy Pinning}
  * @see {@link https://www.w3.org/TR/csp-pinning/#content-security-policy-report-only-pin-header-field | Documentation → Content Security Policy Pinning}
  */
 export type HttpFieldContentSecurityPolicyReportOnlyPin =
@@ -816,7 +742,6 @@ export type HttpFieldContentSecurityPolicyReportOnlyPin =
  * the payload body of an HTTP message. This allows for content
  * to be protected from modification.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/thomson-http-content-signature | Specification → Internet Draft thomson-http-content-signature}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-thomson-http-content-signature#section-2 | Documentation → Internet Draft thomson-http-content-signature §2}
  */
 export type HttpFieldContentSignature = 'Content-Signature'
@@ -828,7 +753,6 @@ export type HttpFieldContentSignature = 'Content-Signature'
  * preferences, a conforming email client can determine which
  * message part to display.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8255 | Specification → RFC 8255}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8255#section-6 | Documentation → RFC 8255 §6}
  */
 export type HttpFieldContentTranslationType = 'Content-Translation-Type'
@@ -843,7 +767,6 @@ export type HttpFieldContentTranslationType = 'Content-Translation-Type'
  * the scope of the received message semantics, after any
  * content codings indicated by Content-Encoding are decoded.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.1.5 | Documentation → RFC 7231 §3.1.1.5}
  */
 export type HttpFieldContentType = 'Content-Type'
@@ -858,7 +781,6 @@ export type HttpFieldContentType = 'Content-Type'
  * than derived works or renditions in different
  * representations.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2068 | Specification → RFC 2068}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2068#section-19.6.2.2 | Documentation → RFC 2068 §19.6.2.2}
  */
 export type HttpFieldContentVersion = 'Content-Version'
@@ -867,7 +789,6 @@ export type HttpFieldContentVersion = 'Content-Version'
  * The Content-Warning header allows to return different kinds
  * of warning information via HTTP.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/cedik-http-warning | Specification → Internet Draft cedik-http-warning}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-cedik-http-warning#section-8.1 | Documentation → Internet Draft cedik-http-warning §8.1}
  */
 export type HttpFieldContentWarning = 'Content-Warning'
@@ -876,9 +797,7 @@ export type HttpFieldContentWarning = 'Content-Warning'
  * The user agent sends stored cookies to the origin server in
  * the Cookie header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-rfc6265bis | Specification → Internet Draft ietf-httpbis-rfc6265bis}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis#section-4.2 | Documentation → Internet Draft ietf-httpbis-rfc6265bis §4.2}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6265 | Specification → RFC 6265}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6265#section-4.2 | Documentation → RFC 6265 §4.2}
  */
 export type HttpFieldCookie = 'Cookie'
@@ -888,7 +807,6 @@ export type HttpFieldCookie = 'Cookie'
  * between clients and servers that understand different
  * versions of the cookie specification.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2965 | Specification → RFC 2965}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2965#section-3.3 | Documentation → RFC 2965 §3.3}
  */
 export type HttpFieldCookie2 = 'Cookie2'
@@ -898,7 +816,6 @@ export type HttpFieldCookie2 = 'Cookie2'
  * how cross-origin resources should load, based on a specific
  * policy/set of permissions.
  *
- * @see {@link https://html.spec.whatwg.org/ | Specification → WHATWG HTML Standard}
  * @see {@link https://html.spec.whatwg.org/#cross-origin-embedder-policy | Documentation → WHATWG HTML Standard}
  */
 export type HttpFieldCrossOriginEmbedderPolicy = 'Cross-Origin-Embedder-Policy'
@@ -909,7 +826,6 @@ export type HttpFieldCrossOriginEmbedderPolicy = 'Cross-Origin-Embedder-Policy'
  * creation of a new top-level browsing context, and a
  * corresponding group.
  *
- * @see {@link https://html.spec.whatwg.org/ | Specification → WHATWG HTML Standard}
  * @see {@link https://html.spec.whatwg.org/#cross-origin-opener-policy | Documentation → WHATWG HTML Standard}
  */
 export type HttpFieldCrossOriginOpenerPolicy = 'Cross-Origin-Opener-Policy'
@@ -919,7 +835,6 @@ export type HttpFieldCrossOriginOpenerPolicy = 'Cross-Origin-Opener-Policy'
  * used to require checking a request’s current URL’s origin
  * against a request’s origin when request’s mode is "no-cors".
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-cross-origin-resource-policy | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldCrossOriginResourcePolicy = 'Cross-Origin-Resource-Policy'
@@ -935,7 +850,6 @@ export type HttpFieldCrossOriginResourcePolicy = 'Cross-Origin-Resource-Policy'
  * itself is identified by its namespace name (a URI reference)
  * and the element's local name).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/5323 | Specification → RFC 5323}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc5323#section-9.1.1 | Documentation → RFC 5323 §9.1.1}
  */
 export type HttpFieldDasl = 'DASL'
@@ -947,7 +861,6 @@ export type HttpFieldDasl = 'DASL'
  * client to advertise compliance with named features when the
  * server needs that information.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.1 | Documentation → RFC 4918 §10.1}
  */
 export type HttpFieldDav = 'DAV'
@@ -956,7 +869,6 @@ export type HttpFieldDav = 'DAV'
  * The DNT header field is defined as the means for expressing
  * a user's tracking preference via HTTP.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/tracking-dnt | Specification → Tracking Preference Expression (DNT)}
  * @see {@link https://www.w3.org/TR/tracking-dnt/#dnt-header-field | Documentation → Tracking Preference Expression (DNT)}
  */
 export type HttpFieldDnt = 'DNT'
@@ -967,7 +879,6 @@ export type HttpFieldDnt = 'DNT'
  * as the Origination Date Field (orig-date) defined in Section
  * 3.6.1 of RFC 5322.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.1.2 | Documentation → RFC 7231 §7.1.1.2}
  */
 export type HttpFieldDate = 'Date'
@@ -982,7 +893,6 @@ export type HttpFieldDate = 'Date'
  * that includes a delta-coding MAY include a Delta-Base
  * header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3229 | Specification → RFC 3229}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3229#section-10.5.1 | Documentation → RFC 3229 §10.5.1}
  */
 export type HttpFieldDeltaBase = 'Delta-Base'
@@ -994,7 +904,6 @@ export type HttpFieldDeltaBase = 'Delta-Base'
  * information that the resource is deprecated since which
  * version.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-deprecation-header | Specification → Internet Draft ietf-httpapi-deprecation-header}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-deprecation-header#section-2 | Documentation → Internet Draft ietf-httpapi-deprecation-header §2}
  */
 export type HttpFieldDeprecation = 'Deprecation'
@@ -1007,7 +916,6 @@ export type HttpFieldDeprecation = 'Deprecation'
  * members only ("Depth: 1"), or the resource and all its
  * members ("Depth: infinity").
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.2 | Documentation → RFC 4918 §10.2}
  */
 export type HttpFieldDepth = 'Depth'
@@ -1017,7 +925,6 @@ export type HttpFieldDepth = 'Depth'
  * identifies a destination resource for methods such as COPY
  * and MOVE, which take two URIs as parameters.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.3 | Documentation → RFC 4918 §10.3}
  */
 export type HttpFieldDestination = 'Destination'
@@ -1027,7 +934,6 @@ export type HttpFieldDestination = 'Destination'
  * the client's device memory i.e. approximate amount of ram in
  * GiB.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/device-memory-1 | Specification → Device Memory}
  * @see {@link https://www.w3.org/TR/device-memory-1/#sec-device-memory-client-hint-header | Documentation → Device Memory}
  */
 export type HttpFieldDeviceMemory = 'Device-Memory'
@@ -1039,7 +945,6 @@ export type HttpFieldDeviceMemory = 'Device-Memory'
  * response then the client MUST echo the stored "id" in a
  * "Dictionary-ID" request header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary | Specification → Internet Draft ietf-httpbis-compression-dictionary}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3 | Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.3}
  */
 export type HttpFieldDictionaryId = 'Dictionary-ID'
@@ -1048,7 +953,6 @@ export type HttpFieldDictionaryId = 'Dictionary-ID'
  * The Digest message header field provides a message digest of
  * the instance described by the message.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3230 | Specification → RFC 3230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3230#section-4.3.2 | Documentation → RFC 3230 §4.3.2}
  */
 export type HttpFieldDigest = 'Digest'
@@ -1058,7 +962,6 @@ export type HttpFieldDigest = 'Digest'
  * the downlink value at the time when the request is made by
  * the user agent.
  *
- * @see {@link https://wicg.github.io/netinfo/ | Specification → WICG Network Information API}
  * @see {@link https://wicg.github.io/netinfo/#downlink-request-header-field | Documentation → WICG Network Information API}
  */
 export type HttpFieldDownlink = 'Downlink'
@@ -1067,7 +970,6 @@ export type HttpFieldDownlink = 'Downlink'
  * The EDIINT-Features header field indicates the originating
  * user agent is capable of supporting the features listed.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6017 | Specification → RFC 6017}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6017#section-3 | Documentation → RFC 6017 §3}
  */
 export type HttpFieldEdiintFeatures = 'EDIINT-Features'
@@ -1077,7 +979,6 @@ export type HttpFieldEdiintFeatures = 'EDIINT-Features'
  * Regulation (EPR) by sending an EPR HTTP response header
  * field along with a response.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/epr | Specification → Entry Point Regulation}
  * @see {@link https://www.w3.org/TR/epr/#epr-header | Documentation → Entry Point Regulation}
  */
 export type HttpFieldEpr = 'EPR'
@@ -1092,7 +993,6 @@ export type HttpFieldEpr = 'EPR'
  * changes over time, content negotiation resulting in multiple
  * representations being valid at the same time, or both.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-2.3 | Documentation → RFC 7232 §2.3}
  */
 export type HttpFieldETag = 'ETag'
@@ -1102,7 +1002,6 @@ export type HttpFieldETag = 'ETag'
  * request has been conveyed in early data and that a client
  * understands the 425 (Too Early) status code.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8470 | Specification → RFC 8470}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8470#section-5.1 | Documentation → RFC 8470 §5.1}
  */
 export type HttpFieldEarlyData = 'Early-Data'
@@ -1112,7 +1011,6 @@ export type HttpFieldEarlyData = 'Early-Data'
  * effective connection type at the time when the request is
  * made by the user agent.
  *
- * @see {@link https://wicg.github.io/netinfo/ | Specification → WICG Network Information API}
  * @see {@link https://wicg.github.io/netinfo/#ect-request-header-field | Documentation → WICG Network Information API}
  */
 export type HttpFieldEct = 'ECT'
@@ -1122,7 +1020,6 @@ export type HttpFieldEct = 'ECT'
  * set of behaviors (expectations) that need to be supported by
  * the server in order to properly handle this request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.1.1 | Documentation → RFC 7231 §5.1.1}
  */
 export type HttpFieldExpect = 'Expect'
@@ -1133,7 +1030,6 @@ export type HttpFieldExpect = 'Expect'
  * that UAs should evaluate connections to the host emitting
  * the header field for CT compliance.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/9163 | Specification → RFC 9163}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc9163 | Documentation → RFC 9163}
  */
 export type HttpFieldExpectCt = 'Expect-CT'
@@ -1144,7 +1040,6 @@ export type HttpFieldExpectCt = 'Expect-CT'
  * field does not imply that the original resource will change
  * or cease to exist at, before, or after that time.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7234 | Specification → RFC 7234}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7234#section-5.3 | Documentation → RFC 7234 §5.3}
  */
 export type HttpFieldExpires = 'Expires'
@@ -1154,7 +1049,6 @@ export type HttpFieldExpires = 'Expires'
  * mandatory extension declarations in the request were
  * fulfilled.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.3 | Documentation → RFC 2774 §4.3}
  */
 export type HttpFieldExt = 'Ext'
@@ -1164,7 +1058,6 @@ export type HttpFieldExt = 'Ext'
  * response (server to client) to communicate the feature
  * policy that should be enforced by the client.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/feature-policy-1 | Specification → Permissions Policy}
  * @see {@link https://www.w3.org/TR/feature-policy-1/#feature-policy-http-header-field | Documentation → Permissions Policy}
  */
 export type HttpFieldFeaturePolicy = 'Feature-Policy'
@@ -1176,7 +1069,6 @@ export type HttpFieldFeaturePolicy = 'Feature-Policy'
  * altered or lost when a proxy is involved in the path of the
  * request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7239 | Specification → RFC 7239}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7239#section-4 | Documentation → RFC 7239 §4}
  */
 export type HttpFieldForwarded = 'Forwarded'
@@ -1185,7 +1077,6 @@ export type HttpFieldForwarded = 'Forwarded'
  * The "From" header field contains an Internet email address
  * for a human user who controls the requesting user agent.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.5.1 | Documentation → RFC 7231 §5.5.1}
  */
 export type HttpFieldFrom = 'From'
@@ -1195,7 +1086,6 @@ export type HttpFieldFrom = 'From'
  * resource that can be used in subsequent requests for the
  * same information, but using the GET method.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/reschke-http-get-location | Specification → Internet Draft reschke-http-get-location}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-reschke-http-get-location#section-3 | Documentation → Internet Draft reschke-http-get-location §3}
  */
 export type HttpFieldGetLocation = 'GET-Location'
@@ -1208,7 +1098,6 @@ export type HttpFieldGetLocation = 'GET-Location'
  * connection, provided in anticipation of the server accepting
  * the request to upgrade.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7540 | Specification → RFC 7540}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7540#section-3.2.1 | Documentation → RFC 7540 §3.2.1}
  */
 export type HttpFieldHttp2Settings = 'HTTP2-Settings'
@@ -1222,7 +1111,6 @@ export type HttpFieldHttp2Settings = 'HTTP2-Settings'
  * response for an interstitial page), the server MAY add this
  * header with a value of "reginwork".
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7486 | Specification → RFC 7486}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7486#section-6.1.1 | Documentation → RFC 7486 §6.1.1}
  */
 export type HttpFieldHobareg = 'Hobareg'
@@ -1233,7 +1121,6 @@ export type HttpFieldHobareg = 'Hobareg'
  * server to distinguish among resources while servicing
  * requests for multiple host names on a single IP address.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-5.4 | Documentation → RFC 7230 §5.4}
  */
 export type HttpFieldHost = 'Host'
@@ -1244,7 +1131,6 @@ export type HttpFieldHost = 'Host'
  * the instance represented by the response. Typical instance
  * manipulations include delta encoding and compression.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3229 | Specification → RFC 3229}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3229#section-10.5.2 | Documentation → RFC 3229 §10.5.2}
  */
 export type HttpFieldIm = 'IM'
@@ -1255,7 +1141,6 @@ export type HttpFieldIm = 'IM'
  * retries of the same request. The "Idempotency-Key" HTTP
  * request header field carries this key.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-idempotency-key-header | Specification → Internet Draft ietf-httpapi-idempotency-key-header}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-00#section-2 | Documentation → Internet Draft ietf-httpapi-idempotency-key-header §2}
  */
 export type HttpFieldIdempotencyKey = 'Idempotency-Key'
@@ -1268,7 +1153,6 @@ export type HttpFieldIdempotencyKey = 'Idempotency-Key'
  * is a lock token, and lock tokens are the only state tokens
  * defined in this specification.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.4 | Documentation → RFC 4918 §10.4}
  */
 export type HttpFieldIf = 'If'
@@ -1282,7 +1166,6 @@ export type HttpFieldIf = 'If'
  * matching a member of the list of entity-tags provided in the
  * field-value.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-3.1 | Documentation → RFC 7232 §3.1}
  */
 export type HttpFieldIfMatch = 'If-Match'
@@ -1295,7 +1178,6 @@ export type HttpFieldIfMatch = 'If-Match'
  * representation's data is avoided if that data has not
  * changed.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-3.3 | Documentation → RFC 7232 §3.3}
  */
 export type HttpFieldIfModifiedSince = 'If-Modified-Since'
@@ -1308,7 +1190,6 @@ export type HttpFieldIfModifiedSince = 'If-Modified-Since'
  * representation with an entity-tag that does not match any of
  * those listed in the field-value.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-3.2 | Documentation → RFC 7232 §3.2}
  */
 export type HttpFieldIfNoneMatch = 'If-None-Match'
@@ -1327,7 +1208,6 @@ export type HttpFieldIfNoneMatch = 'If-None-Match'
  * part(s) that I am requesting in Range; otherwise, send me
  * the entire representation.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7233 | Specification → RFC 7233}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7233#section-3.2 | Documentation → RFC 7233 §3.2}
  */
 export type HttpFieldIfRange = 'If-Range'
@@ -1341,7 +1221,6 @@ export type HttpFieldIfRange = 'If-Range'
  * overwriting "consequential" changes to the scheduling object
  * resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6638 | Specification → RFC 6638}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6638#section-8.3 | Documentation → RFC 6638 §8.3}
  */
 export type HttpFieldIfScheduleTagMatch = 'If-Schedule-Tag-Match'
@@ -1354,7 +1233,6 @@ export type HttpFieldIfScheduleTagMatch = 'If-Schedule-Tag-Match'
  * same purpose as If-Match for cases where the user agent does
  * not have an entity-tag for the representation.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-3.4 | Documentation → RFC 7232 §3.4}
  */
 export type HttpFieldIfUnmodifiedSince = 'If-Unmodified-Since'
@@ -1365,7 +1243,6 @@ export type HttpFieldIfUnmodifiedSince = 'If-Unmodified-Since'
  * include an Include-Referred-Token-Binding-ID HTTP response
  * header field in its HTTP response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8473 | Specification → RFC 8473}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8473#section-5.3 | Documentation → RFC 8473 §5.3}
  */
 export type HttpFieldIncludeReferredTokenBindingId =
@@ -1378,7 +1255,6 @@ export type HttpFieldIncludeReferredTokenBindingId =
  * "Vary" response header field, but it allows more
  * fine-grained description, using "key modifiers".
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-key | Specification → Internet Draft ietf-httpbis-key}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-key#section-2 | Documentation → Internet Draft ietf-httpbis-key §2}
  */
 export type HttpFieldKey = 'Key'
@@ -1390,7 +1266,6 @@ export type HttpFieldKey = 'Key'
  * be applied to the version selected by that label from the
  * version history of that version-controlled resource.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3253 | Specification → RFC 3253}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3253#section-8.3 | Documentation → RFC 3253 §8.3}
  */
 export type HttpFieldLabel = 'Label'
@@ -1399,7 +1274,6 @@ export type HttpFieldLabel = 'Label'
  * The Last-Event-ID HTTP header specifies the value of the
  * event source's last event ID string, encoded as UTF-8.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/eventsource | Specification → Server-Sent Events}
  * @see {@link https://www.w3.org/TR/eventsource/#last-event-id | Documentation → Server-Sent Events}
  */
 export type HttpFieldLastEventId = 'Last-Event-ID'
@@ -1411,7 +1285,6 @@ export type HttpFieldLastEventId = 'Last-Event-ID'
  * modified, as determined at the conclusion of handling the
  * request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7232 | Specification → RFC 7232}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7232#section-2.2 | Documentation → RFC 7232 §2.2}
  */
 export type HttpFieldLastModified = 'Last-Modified'
@@ -1420,7 +1293,6 @@ export type HttpFieldLastModified = 'Last-Modified'
  * The Link header field provides a means for serialising one
  * or more links into HTTP headers.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8288 | Specification → RFC 8288}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8288#section-3 | Documentation → RFC 8288 §3}
  */
 export type HttpFieldLink = 'Link'
@@ -1432,7 +1304,6 @@ export type HttpFieldLink = 'Link'
  * in Section 3 of "Web Linking", except that it uses URI
  * Templates to convey the structure of links.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-link-template | Specification → Internet Draft ietf-httpapi-link-template}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-link-template#section-2 | Documentation → Internet Draft ietf-httpapi-link-template §2}
  */
 export type HttpFieldLinkTemplate = 'Link-Template'
@@ -1443,7 +1314,6 @@ export type HttpFieldLinkTemplate = 'Link-Template'
  * The type of relationship is defined by the combination of
  * request method and status code semantics.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.2 | Documentation → RFC 7231 §7.1.2}
  */
 export type HttpFieldLocation = 'Location'
@@ -1452,7 +1322,6 @@ export type HttpFieldLocation = 'Location'
  * The Lock-Token request header is used with the UNLOCK method
  * to identify the lock to be removed.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.5 | Documentation → RFC 4918 §10.5}
  */
 export type HttpFieldLockToken = 'Lock-Token'
@@ -1467,7 +1336,6 @@ export type HttpFieldLockToken = 'Lock-Token'
  * ensuring full conformance (where possible) when exporting
  * HTTP messages to strict MIME environments.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#appendix-A.1 | Documentation → RFC 7231}
  */
 export type HttpFieldMimeVersion = 'MIME-Version'
@@ -1478,7 +1346,6 @@ export type HttpFieldMimeVersion = 'MIME-Version'
  * given by the extension when processing the message or
  * reporting an error.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.1 | Documentation → RFC 2774 §4.1}
  */
 export type HttpFieldMan = 'Man'
@@ -1488,7 +1355,6 @@ export type HttpFieldMan = 'Man'
  * the TRACE and OPTIONS request methods to limit the number of
  * times that the request is forwarded by proxies.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.1.2 | Documentation → RFC 7231 §5.1.2}
  */
 export type HttpFieldMaxForwards = 'Max-Forwards'
@@ -1499,7 +1365,6 @@ export type HttpFieldMaxForwards = 'Max-Forwards'
  * Original Resource. Its value expresses the datetime of that
  * state.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7089 | Specification → RFC 7089}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7089#section-2.1.1 | Documentation → RFC 7089 §2.1.1}
  */
 export type HttpFieldMementoDatetime = 'Memento-Datetime'
@@ -1510,7 +1375,6 @@ export type HttpFieldMementoDatetime = 'Memento-Datetime'
  * interpreted as an array of JSON objects. Each object in the
  * array defines an NEL policy for the origin.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/network-error-logging-1 | Specification → Network Error Logging}
  * @see {@link https://www.w3.org/TR/network-error-logging-1/#nel-response-header | Documentation → Network Error Logging}
  */
 export type HttpFieldNel = 'NEL'
@@ -1519,7 +1383,6 @@ export type HttpFieldNel = 'NEL'
  * The Negotiate request header can contain directives for any
  * content negotiation process initiated by the request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2295 | Specification → RFC 2295}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2295#section-8.4 | Documentation → RFC 2295 §8.4}
  */
 export type HttpFieldNegotiate = 'Negotiate'
@@ -1528,7 +1391,6 @@ export type HttpFieldNegotiate = 'Negotiate'
  * The "Nice" header field indicates that a request is less
  * important than a request that doesn't bear this header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/thomson-http-nice | Specification → Internet Draft thomson-http-nice}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-thomson-http-nice#section-2 | Documentation → Internet Draft thomson-http-nice §2}
  */
 export type HttpFieldNice = 'Nice'
@@ -1539,7 +1401,6 @@ export type HttpFieldNice = 'Nice'
  * The value of the header is the entity-id of the entity that
  * was acted on by the request.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/odata-v4.0-part1-protocol | Specification → OASIS Standard odata-v4.0-part1-protocol}
  * @see {@link http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752238 | Documentation → OASIS Standard odata-v4.0-part1-protocol}
  */
 export type HttpFieldODataEntityId = 'OData-EntityId'
@@ -1549,7 +1410,6 @@ export type HttpFieldODataEntityId = 'OData-EntityId'
  * current request from external changes. The only supported
  * value for this header is snapshot.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/odata-v4.0-part1-protocol | Specification → OASIS Standard odata-v4.0-part1-protocol}
  * @see {@link http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752232 | Documentation → OASIS Standard odata-v4.0-part1-protocol}
  */
 export type HttpFieldODataIsolation = 'OData-Isolation'
@@ -1560,7 +1420,6 @@ export type HttpFieldODataIsolation = 'OData-Isolation'
  * OData-Version less than or equal to the specified
  * OData-MaxVersion.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/odata-v4.0-part1-protocol | Specification → OASIS Standard odata-v4.0-part1-protocol}
  * @see {@link http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752233 | Documentation → OASIS Standard odata-v4.0-part1-protocol}
  */
 export type HttpFieldODataMaxVersion = 'OData-MaxVersion'
@@ -1570,7 +1429,6 @@ export type HttpFieldODataMaxVersion = 'OData-MaxVersion'
  * carrying the content of the CoAP OSCORE option when
  * transporting OSCORE messages over HTTP hops.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8613 | Specification → RFC 8613}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8613#section-11.1 | Documentation → RFC 8613 §11.1}
  */
 export type HttpFieldOscore = 'OSCORE'
@@ -1585,7 +1443,6 @@ export type HttpFieldOscore = 'OSCORE'
  * optional extension or simply ignores the extension
  * declaration.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2774 | Specification → RFC 2774}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2774#section-4.1 | Documentation → RFC 2774 §4.1}
  */
 export type HttpFieldOpt = 'Opt'
@@ -1595,7 +1452,6 @@ export type HttpFieldOpt = 'Opt'
  * authentication, which is not possible under the current HTTP
  * authentication mechanism.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8053 | Specification → RFC 8053}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8053#section-3 | Documentation → RFC 8053 §3}
  */
 export type HttpFieldOptionalWwwAuthenticate = 'Optional-WWW-Authenticate'
@@ -1610,7 +1466,6 @@ export type HttpFieldOptionalWwwAuthenticate = 'Optional-WWW-Authenticate'
  * to DAV:custom to indicate that the collection is ordered but
  * the semantics of the ordering are not being advertised.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3648 | Specification → RFC 3648}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3648#section-5.1 | Documentation → RFC 3648 §5.1}
  */
 export type HttpFieldOrderingType = 'Ordering-Type'
@@ -1619,7 +1474,6 @@ export type HttpFieldOrderingType = 'Ordering-Type'
  * The Origin header indicates where the cross-origin request
  * or preflight request originates from.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#http-origin | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldOrigin = 'Origin'
@@ -1630,7 +1484,6 @@ export type HttpFieldOrigin = 'Origin'
  * agent generates an HTTP request, it MUST NOT attach more
  * than one "Origin-Cookie" header field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/west-origin-cookies | Specification → Internet Draft west-origin-cookies}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-west-origin-cookies#section-4.4 | Documentation → Internet Draft west-origin-cookies §4.4}
  */
 export type HttpFieldOriginCookie = 'Origin-Cookie'
@@ -1640,7 +1493,6 @@ export type HttpFieldOriginCookie = 'Origin-Cookie'
  * should overwrite a resource mapped to the destination URL
  * during a COPY or MOVE.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.6 | Documentation → RFC 4918 §10.6}
  */
 export type HttpFieldOverwrite = 'Overwrite'
@@ -1653,7 +1505,6 @@ export type HttpFieldOverwrite = 'Overwrite'
  * methods, including HEAD and OPTIONS requests. The P3P header
  * gives one or more comma-separated directives.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/P3P | Specification → The Platform for Privacy Preferences 1.0 (P3P1.0) Specification}
  * @see {@link https://www.w3.org/TR/P3P/#syntax_ext | Documentation → The Platform for Privacy Preferences 1.0 (P3P1.0) Specification}
  */
 export type HttpFieldP3P = 'P3P'
@@ -1663,7 +1514,6 @@ export type HttpFieldP3P = 'P3P'
  * ultimate recipient of the declaration. The PEP header field
  * is an end-to-end header field.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-http-pep | Specification → PEP - an Extension Mechanism for HTTP}
  * @see {@link https://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743947 | Documentation → PEP - an Extension Mechanism for HTTP}
  */
 export type HttpFieldPep = 'PEP'
@@ -1672,7 +1522,6 @@ export type HttpFieldPep = 'PEP'
  * PEP end-to-end policies MUST be transmitted to the ultimate
  * recipient of a message.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-http-pep | Specification → PEP - an Extension Mechanism for HTTP}
  * @see {@link https://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743953 | Documentation → PEP - an Extension Mechanism for HTTP}
  */
 export type HttpFieldPepInfo = 'PEP-Info'
@@ -1681,7 +1530,6 @@ export type HttpFieldPepInfo = 'PEP-Info'
  * The Permissions-Policy HTTP response header allows a site to
  * control which features and APIs can be used in the browser.
  *
- * @see {@link https://www.w3.org/TR/permissions-policy-1/ | Specification → Permissions Policy}
  * @see {@link https://www.w3.org/TR/permissions-policy-1/#permissions-policy-http-header-field | Documentation → Permissions Policy}
  */
 export type HttpFieldPermissionsPolicy = 'Permissions-Policy'
@@ -1691,7 +1539,6 @@ export type HttpFieldPermissionsPolicy = 'Permissions-Policy'
  * field-value indicates the version of POE that a client
  * supports.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/nottingham-http-poe | Specification → Internet Draft nottingham-http-poe}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-4 | Documentation → Internet Draft nottingham-http-poe §4}
  */
 export type HttpFieldPoe = 'POE'
@@ -1704,7 +1551,6 @@ export type HttpFieldPoe = 'POE'
  * the POE-Links response header SHOULD correspond to links
  * found in the content of the response body.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/nottingham-http-poe | Specification → Internet Draft nottingham-http-poe}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-3 | Documentation → Internet Draft nottingham-http-poe §3}
  */
 export type HttpFieldPoeLinks = 'POE-Links'
@@ -1720,7 +1566,6 @@ export type HttpFieldPoeLinks = 'POE-Links'
  * collection's ordering, or immediately after some other
  * internal member URI in the collection's ordering.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3648 | Specification → RFC 3648}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3648#section-6.1 | Documentation → RFC 3648 §6.1}
  */
 export type HttpFieldPosition = 'Position'
@@ -1733,7 +1578,6 @@ export type HttpFieldPosition = 'Position'
  * Cache-Control header field is also present and understood in
  * a request, Pragma is ignored.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7234 | Specification → RFC 7234}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7234#section-5.4 | Documentation → RFC 7234 §5.4}
  */
 export type HttpFieldPragma = 'Pragma'
@@ -1746,7 +1590,6 @@ export type HttpFieldPragma = 'Pragma'
  * the exception that servers are allowed to ignore stated
  * preferences.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7240 | Specification → RFC 7240}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7240#section-2 | Documentation → RFC 7240 §2}
  */
 export type HttpFieldPrefer = 'Prefer'
@@ -1756,7 +1599,6 @@ export type HttpFieldPrefer = 'Prefer'
  * to request that a server uses HTTP/2 Push to send related
  * resources as identified by their link relationships.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/pot-prefer-push | Specification → Internet Draft pot-prefer-push}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-pot-prefer-push#section-3 | Documentation → Internet Draft pot-prefer-push §3}
  */
 export type HttpFieldPreferPush = 'Prefer-Push'
@@ -1767,7 +1609,6 @@ export type HttpFieldPreferPush = 'Prefer-Push'
  * Prefer tokens were honored by the server and applied to the
  * processing of a request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7240 | Specification → RFC 7240}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7240#section-3 | Documentation → RFC 7240 §3}
  */
 export type HttpFieldPreferenceApplied = 'Preference-Applied'
@@ -1783,7 +1624,6 @@ export type HttpFieldPreferenceApplied = 'Preference-Applied'
  * priority from the client or the response priority from the
  * server.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-priority | Specification → Internet Draft ietf-httpbis-priority}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-priority#section-5 | Documentation → Internet Draft ietf-httpbis-priority §5}
  */
 export type HttpFieldPriority = 'Priority'
@@ -1795,7 +1635,6 @@ export type HttpFieldPriority = 'Priority'
  * request URI. It MUST be included as part of a 407 (Proxy
  * Authentication Required) response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7235 | Specification → RFC 7235}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7235#section-4.2 | Documentation → RFC 7235 §4.2}
  */
 export type HttpFieldProxyAuthenticate = 'Proxy-Authenticate'
@@ -1809,7 +1648,6 @@ export type HttpFieldProxyAuthenticate = 'Proxy-Authenticate'
  * because only the client that chose a given proxy is likely
  * to have the credentials necessary for authentication.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7615 | Specification → RFC 7615}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7615#section-4 | Documentation → RFC 7615 §4}
  */
 export type HttpFieldProxyAuthenticationInfo = 'Proxy-Authentication-Info'
@@ -1821,7 +1659,6 @@ export type HttpFieldProxyAuthenticationInfo = 'Proxy-Authentication-Info'
  * the authentication information of the client for the proxy
  * and/or realm of the resource being requested.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7235 | Specification → RFC 7235}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7235#section-4.3 | Documentation → RFC 7235 §4.3}
  */
 export type HttpFieldProxyAuthorization = 'Proxy-Authorization'
@@ -1831,7 +1668,6 @@ export type HttpFieldProxyAuthorization = 'Proxy-Authorization'
  * a server. It specifies the features supported by the
  * specified proxy.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-proxy | Specification → Notification for Proxy Caches}
  * @see {@link https://www.w3.org/TR/WD-proxy | Documentation → Notification for Proxy Caches}
  */
 export type HttpFieldProxyFeatures = 'Proxy-Features'
@@ -1842,7 +1678,6 @@ export type HttpFieldProxyFeatures = 'Proxy-Features'
  * Proxy-Features header was present in the corresponding
  * request.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/WD-proxy | Specification → Notification for Proxy Caches}
  * @see {@link https://www.w3.org/TR/WD-proxy | Documentation → Notification for Proxy Caches}
  */
 export type HttpFieldProxyInstruction = 'Proxy-Instruction'
@@ -1852,7 +1687,6 @@ export type HttpFieldProxyInstruction = 'Proxy-Instruction'
  * to convey additional information about its handling of a
  * response and its associated request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/9209 | Specification → RFC 9209}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc9209#section-2 | Documentation → RFC 9209 §2}
  */
 export type HttpFieldProxyStatus = 'Proxy-Status'
@@ -1866,7 +1700,6 @@ export type HttpFieldProxyStatus = 'Proxy-Status'
  * field MAY be used to indicate methods allowed for a
  * particular URI.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2068 | Specification → RFC 2068}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2068#section-14.35 | Documentation → RFC 2068 §14.35}
  */
 export type HttpFieldPublic = 'Public'
@@ -1877,7 +1710,6 @@ export type HttpFieldPublic = 'Public'
  * Date (computed from max-age), and (if any) report-uri given
  * in the most recently received Valid Pinning Header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7469 | Specification → RFC 7469}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7469#section-2.5 | Documentation → RFC 7469 §2.5}
  */
 export type HttpFieldPublicKeyPins = 'Public-Key-Pins'
@@ -1891,7 +1723,6 @@ export type HttpFieldPublicKeyPins = 'Public-Key-Pins'
  * expressed in the PKP field or in previously noted Pins for
  * the Known Pinned Host.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7469 | Specification → RFC 7469}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7469#section-2.5 | Documentation → RFC 7469 §2.5}
  */
 export type HttpFieldPublicKeyPinsReportOnly = 'Public-Key-Pins-Report-Only'
@@ -1901,7 +1732,6 @@ export type HttpFieldPublicKeyPinsReportOnly = 'Public-Key-Pins-Report-Only'
  * when processing a request by sending a "Push-Policy" header
  * field in the corresponding response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ruellan-http-accept-push-policy | Specification → Internet Draft ruellan-http-accept-push-policy}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ruellan-http-accept-push-policy#section-3.2 | Documentation → Internet Draft ruellan-http-accept-push-policy §3.2}
  */
 export type HttpFieldPushPolicy = 'Push-Policy'
@@ -1912,7 +1742,6 @@ export type HttpFieldPushPolicy = 'Push-Policy'
  * subranges of the selected representation data, rather than
  * the entire selected representation data.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7233 | Specification → RFC 7233}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7233#section-3.1 | Documentation → RFC 7233 §3.1}
  */
 export type HttpFieldRange = 'Range'
@@ -1922,7 +1751,6 @@ export type HttpFieldRange = 'Range'
  * maximum number of requests that the server allocated to the
  * client in the current time-window.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-ratelimit-headers | Specification → Internet Draft ietf-httpapi-ratelimit-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-ratelimit-headers#section-3.1 | Documentation → Internet Draft ietf-httpapi-ratelimit-headers §3.1}
  */
 export type HttpFieldRateLimitLimit = 'RateLimit-Limit'
@@ -1932,7 +1760,6 @@ export type HttpFieldRateLimitLimit = 'RateLimit-Limit'
  * number of requests left for the client until the quota
  * resets.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-ratelimit-headers | Specification → Internet Draft ietf-httpapi-ratelimit-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-ratelimit-headers#section-3.2 | Documentation → Internet Draft ietf-httpapi-ratelimit-headers §3.2}
  */
 export type HttpFieldRateLimitRemaining = 'RateLimit-Remaining'
@@ -1942,7 +1769,6 @@ export type HttpFieldRateLimitRemaining = 'RateLimit-Remaining'
  * the number of seconds until the quota resets, or the
  * timestamp when the quota resets.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-ratelimit-headers | Specification → Internet Draft ietf-httpapi-ratelimit-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-polli-ratelimit-headers#section-3.3 | Documentation → Internet Draft ietf-httpapi-ratelimit-headers §3.3}
  */
 export type HttpFieldRateLimitReset = 'RateLimit-Reset'
@@ -1952,7 +1778,6 @@ export type HttpFieldRateLimitReset = 'RateLimit-Reset'
  * redirect reference resources. The value is the link target
  * as specified during redirect reference resource creation.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4437 | Specification → RFC 4437}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4437#section-12.1 | Documentation → RFC 4437 §12.1}
  */
 export type HttpFieldRedirectRef = 'Redirect-Ref'
@@ -1963,7 +1788,6 @@ export type HttpFieldRedirectRef = 'Redirect-Ref'
  * was obtained (i.e., the "referrer", though the field name is
  * misspelled).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.5.2 | Documentation → RFC 7231 §5.5.2}
  */
 export type HttpFieldReferer = 'Referer'
@@ -1973,7 +1797,6 @@ export type HttpFieldReferer = 'Referer'
  * information (sent via the Referer header) should be included
  * with requests made.
  *
- * @see {@link https://www.w3.org/TR/referrer-policy/ | Specification → Referrer Policy}
  * @see {@link https://www.w3.org/TR/referrer-policy/#referrer-policy-header-dfn | Documentation → Referrer Policy}
  */
 export type HttpFieldReferrerPolicy = 'Referrer-Policy'
@@ -1985,7 +1808,6 @@ export type HttpFieldReferrerPolicy = 'Referrer-Policy'
  * all time, identifier for the instance of the client
  * application that issued the request.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/repeatable-requests-v1.0 | Specification → OASIS Standard repeatable-requests-v1.0}
  * @see {@link https://docs.oasis-open.org/odata/repeatable-requests/v1.0/cs01/repeatable-requests-v1.0-cs01.html#sec_RepeatabilityClientID | Documentation → OASIS Standard repeatable-requests-v1.0}
  */
 export type HttpFieldRepeatabilityClientId = 'Repeatability-Client-ID'
@@ -1996,7 +1818,6 @@ export type HttpFieldRepeatabilityClientId = 'Repeatability-Client-ID'
  * used to specify the date and time at which the request was
  * first created.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/repeatable-requests-v1.0 | Specification → OASIS Standard repeatable-requests-v1.0}
  * @see {@link https://docs.oasis-open.org/odata/repeatable-requests/v1.0/cs01/repeatable-requests-v1.0-cs01.html#sec_RepeatabilityFirstSent | Documentation → OASIS Standard repeatable-requests-v1.0}
  */
 export type HttpFieldRepeatabilityFirstSent = 'Repeatability-First-Sent'
@@ -2008,7 +1829,6 @@ export type HttpFieldRepeatabilityFirstSent = 'Repeatability-First-Sent'
  * client-generated, globally unique for all time, identifier
  * for the request.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/repeatable-requests-v1.0 | Specification → OASIS Standard repeatable-requests-v1.0}
  * @see {@link https://docs.oasis-open.org/odata/repeatable-requests/v1.0/cs01/repeatable-requests-v1.0-cs01.html#sec_RepeatabilityRequestID | Documentation → OASIS Standard repeatable-requests-v1.0}
  */
 export type HttpFieldRepeatabilityRequestId = 'Repeatability-Request-ID'
@@ -2019,7 +1839,6 @@ export type HttpFieldRepeatabilityRequestId = 'Repeatability-Request-ID'
  * repeatable request with one of the case-insensitive values
  * accepted or rejected.
  *
- * @see {@link https://webconcepts.info/specs/OASIS/standard/repeatable-requests-v1.0 | Specification → OASIS Standard repeatable-requests-v1.0}
  * @see {@link https://docs.oasis-open.org/odata/repeatable-requests/v1.0/cs01/repeatable-requests-v1.0-cs01.html#sec_RepeatabilityResult | Documentation → OASIS Standard repeatable-requests-v1.0}
  */
 export type HttpFieldRepeatabilityResult = 'Repeatability-Result'
@@ -2028,7 +1847,6 @@ export type HttpFieldRepeatabilityResult = 'Repeatability-Result'
  * The Report-To HTTP response header field instructs the user
  * agent to store reporting endpoints for an origin.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/reporting-1 | Specification → Reporting API}
  * @see {@link https://www.w3.org/TR/reporting-1/#header | Documentation → Reporting API}
  */
 export type HttpFieldReportTo = 'Report-To'
@@ -2039,7 +1857,6 @@ export type HttpFieldReportTo = 'Report-To'
  * hashing algorithm applied to the entire selected
  * representation data.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers | Specification → Internet Draft ietf-httpbis-digest-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-3 | Documentation → Internet Draft ietf-httpbis-digest-headers §3}
  */
 export type HttpFieldReprDigest = 'Repr-Digest'
@@ -2054,7 +1871,6 @@ export type HttpFieldReprDigest = 'Repr-Digest'
  * minimum time that the user agent is asked to wait before
  * issuing the redirected request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.3 | Documentation → RFC 7231 §7.1.3}
  */
 export type HttpFieldRetryAfter = 'Retry-After'
@@ -2067,7 +1883,6 @@ export type HttpFieldRetryAfter = 'Retry-After'
  * across recently active connections, excluding connections
  * made to private address space.
  *
- * @see {@link https://wicg.github.io/netinfo/ | Specification → WICG Network Information API}
  * @see {@link https://wicg.github.io/netinfo/#rtt-request-header-field | Documentation → WICG Network Information API}
  */
 export type HttpFieldRtt = 'RTT'
@@ -2077,7 +1892,6 @@ export type HttpFieldRtt = 'RTT'
  * server about its preferences regarding the use of data for
  * the given request.
  *
- * @see {@link https://wicg.github.io/savedata/ | Specification → WICG Save Data API}
  * @see {@link https://wicg.github.io/savedata/#dfn-save-data | Documentation → WICG Save Data API}
  */
 export type HttpFieldSaveData = 'Save-Data'
@@ -2090,7 +1904,6 @@ export type HttpFieldSaveData = 'Save-Data'
  * resolvable. An HTTP client MUST use this header field when
  * issuing a SOAP HTTP Request.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/SOAP | Specification → Simple Object Access Protocol (SOAP) 1.1}
  * @see {@link https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383528 | Documentation → Simple Object Access Protocol (SOAP) 1.1}
  */
 export type HttpFieldSoapAction = 'SOAPAction'
@@ -2107,7 +1920,6 @@ export type HttpFieldSoapAction = 'SOAPAction'
  * bodies which are byte-wise identical after decoding of any
  * content and transfer codings.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2310 | Specification → RFC 2310}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2310#section-4 | Documentation → RFC 2310 §4}
  */
 export type HttpFieldSafe = 'Safe'
@@ -2124,7 +1936,6 @@ export type HttpFieldSafe = 'Safe'
  * the scheduling object resource to be removed if such a need
  * arises.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6638 | Specification → RFC 6638}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6638#section-8.1 | Documentation → RFC 6638 §8.1}
  */
 export type HttpFieldScheduleReply = 'Schedule-Reply'
@@ -2133,7 +1944,6 @@ export type HttpFieldScheduleReply = 'Schedule-Reply'
  * The Schedule-Tag response header provides the current value
  * of the CALDAV:schedule-tag property value.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6638 | Specification → RFC 6638}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6638#section-8.2 | Documentation → RFC 6638 §8.2}
  */
 export type HttpFieldScheduleTag = 'Schedule-Tag'
@@ -2144,7 +1954,6 @@ export type HttpFieldScheduleTag = 'Schedule-Tag'
  * the user's forced color scheme. It is based on the
  * `forced-colors` CSS media feature.
  *
- * @see {@link https://wicg.github.io/user-preference-media-features-headers/ | Specification → WICG User Preference Media Features Headers}
  * @see {@link https://wicg.github.io/user-preference-media-features-headers/#sec-ch-forced-colors | Documentation → WICG User Preference Media Features Headers}
  */
 export type HttpFieldSecChForcedColors = 'Sec-CH-Forced-Colors'
@@ -2155,7 +1964,6 @@ export type HttpFieldSecChForcedColors = 'Sec-CH-Forced-Colors'
  * the user's preference for color scheme. It is based on the
  * `prefers-color-scheme` CSS media feature.
  *
- * @see {@link https://wicg.github.io/user-preference-media-features-headers/ | Specification → WICG User Preference Media Features Headers}
  * @see {@link https://wicg.github.io/user-preference-media-features-headers/#sec-ch-prefers-color-scheme | Documentation → WICG User Preference Media Features Headers}
  */
 export type HttpFieldSecChPrefersColorScheme = 'Sec-CH-Prefers-Color-Scheme'
@@ -2166,7 +1974,6 @@ export type HttpFieldSecChPrefersColorScheme = 'Sec-CH-Prefers-Color-Scheme'
  * the user's preference for color contrast. It is based on the
  * `prefers-contrast` CSS media feature.
  *
- * @see {@link https://wicg.github.io/user-preference-media-features-headers/ | Specification → WICG User Preference Media Features Headers}
  * @see {@link https://wicg.github.io/user-preference-media-features-headers/#sec-ch-prefers-contrast | Documentation → WICG User Preference Media Features Headers}
  */
 export type HttpFieldSecChPrefersContrast = 'Sec-CH-Prefers-Contrast'
@@ -2177,7 +1984,6 @@ export type HttpFieldSecChPrefersContrast = 'Sec-CH-Prefers-Contrast'
  * the user's preference for reduced data. It is based on the
  * `prefers-reduced-data` CSS media feature.
  *
- * @see {@link https://wicg.github.io/user-preference-media-features-headers/ | Specification → WICG User Preference Media Features Client Hints Headers}
  * @see {@link https://wicg.github.io/user-preference-media-features-headers/#sec-ch-prefers-reduced-data | Documentation → WICG User Preference Media Features Client Hints Headers}
  */
 export type HttpFieldSecChPrefersReducedData = 'Sec-CH-Prefers-Reduced-Data'
@@ -2188,7 +1994,6 @@ export type HttpFieldSecChPrefersReducedData = 'Sec-CH-Prefers-Reduced-Data'
  * the user's preference for reduced motion. It is based on the
  * `prefers-reduced-motion` CSS media feature.
  *
- * @see {@link https://wicg.github.io/user-preference-media-features-headers/ | Specification → WICG User Preference Media Features Client Hints Headers}
  * @see {@link https://wicg.github.io/user-preference-media-features-headers/#sec-ch-prefers-reduced-motion | Documentation → WICG User Preference Media Features Client Hints Headers}
  */
 export type HttpFieldSecChPrefersReducedMotion = 'Sec-CH-Prefers-Reduced-Motion'
@@ -2198,7 +2003,6 @@ export type HttpFieldSecChPrefersReducedMotion = 'Sec-CH-Prefers-Reduced-Motion'
  * information about the architecture of the platform on which
  * a given user agent is executing.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaArch = 'Sec-CH-UA-Arch'
@@ -2208,7 +2012,6 @@ export type HttpFieldSecChUaArch = 'Sec-CH-UA-Arch'
  * information about the bitness about the architecture of the
  * platform on which a given user agent is executing.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-bitness | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaBitness = 'Sec-CH-UA-Bitness'
@@ -2217,7 +2020,6 @@ export type HttpFieldSecChUaBitness = 'Sec-CH-UA-Bitness'
  * The Sec-CH-UA-Full-Version request header field gives a
  * server information about the full version of the user agent.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaFullVersion = 'Sec-CH-UA-Full-Version'
@@ -2226,7 +2028,6 @@ export type HttpFieldSecChUaFullVersion = 'Sec-CH-UA-Full-Version'
  * The Sec-CH-UA-Full-Version-List request header field gives a
  * server information about the full version of the user agent.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaFullVersionList = 'Sec-CH-UA-Full-Version-List'
@@ -2236,7 +2037,6 @@ export type HttpFieldSecChUaFullVersionList = 'Sec-CH-UA-Full-Version-List'
  * information about whether the user agent prefers a "mobile"
  * experience.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaMobile = 'Sec-CH-UA-Mobile'
@@ -2245,7 +2045,6 @@ export type HttpFieldSecChUaMobile = 'Sec-CH-UA-Mobile'
  * The Sec-CH-UA-Model request header field gives a server
  * information about the model of the user agent.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-model | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaModel = 'Sec-CH-UA-Model'
@@ -2254,7 +2053,6 @@ export type HttpFieldSecChUaModel = 'Sec-CH-UA-Model'
  * The Sec-CH-UA-Platform request header field gives a server
  * information about the platform of the user agent.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaPlatform = 'Sec-CH-UA-Platform'
@@ -2264,7 +2062,6 @@ export type HttpFieldSecChUaPlatform = 'Sec-CH-UA-Platform'
  * server information about the platform version of the user
  * agent.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaPlatformVersion = 'Sec-CH-UA-Platform-Version'
@@ -2274,7 +2071,6 @@ export type HttpFieldSecChUaPlatformVersion = 'Sec-CH-UA-Platform-Version'
  * information about whether or not a user agent binary is
  * running in 32-bit mode on 64-bit Windows.
  *
- * @see {@link https://webconcepts.info/specs/WICG/UA-CH | Specification → WICG User-Agent Client Hints}
  * @see {@link https://wicg.github.io/ua-client-hints/#sec-ch-ua-wow64 | Documentation → WICG User-Agent Client Hints}
  */
 export type HttpFieldSecChUaWoW64 = 'Sec-CH-UA-WoW64'
@@ -2284,7 +2080,6 @@ export type HttpFieldSecChUaWoW64 = 'Sec-CH-UA-WoW64'
  * user agents and servers to convey label metadata to servers
  * and user agents, respectively.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/COWL | Specification → Confinement with Origin Web Labels}
  * @see {@link https://www.w3.org/TR/COWL/#header | Documentation → Confinement with Origin Web Labels}
  */
 export type HttpFieldSecCowl = 'Sec-COWL'
@@ -2293,7 +2088,6 @@ export type HttpFieldSecCowl = 'Sec-COWL'
  * The Sec-Fetch-Dest HTTP request header exposes a request's
  * destination to a server.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/fetch-metadata | Specification → Fetch Metadata Request Headers}
  * @see {@link https://www.w3.org/TR/fetch-metadata/#sec-fetch-dest-header | Documentation → Fetch Metadata Request Headers}
  */
 export type HttpFieldSecFetchDest = 'Sec-Fetch-Dest'
@@ -2302,7 +2096,6 @@ export type HttpFieldSecFetchDest = 'Sec-Fetch-Dest'
  * The Sec-Fetch-Mode HTTP request header exposes a request's
  * mode to a server.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/fetch-metadata | Specification → Fetch Metadata Request Headers}
  * @see {@link https://www.w3.org/TR/fetch-metadata/#sec-fetch-mode-header | Documentation → Fetch Metadata Request Headers}
  */
 export type HttpFieldSecFetchMode = 'Sec-Fetch-Mode'
@@ -2312,7 +2105,6 @@ export type HttpFieldSecFetchMode = 'Sec-Fetch-Mode'
  * relationship between a request initiator’s origin and its
  * target’s origin.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/fetch-metadata | Specification → Fetch Metadata Request Headers}
  * @see {@link https://www.w3.org/TR/fetch-metadata/#sec-fetch-site-header | Documentation → Fetch Metadata Request Headers}
  */
 export type HttpFieldSecFetchSite = 'Sec-Fetch-Site'
@@ -2321,7 +2113,6 @@ export type HttpFieldSecFetchSite = 'Sec-Fetch-Site'
  * The Sec-Fetch-User HTTP request header exposes whether or
  * not a navigation request was triggered by user activation.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/fetch-metadata | Specification → Fetch Metadata Request Headers}
  * @see {@link https://www.w3.org/TR/fetch-metadata/#sec-fetch-user-header | Documentation → Fetch Metadata Request Headers}
  */
 export type HttpFieldSecFetchUser = 'Sec-Fetch-User'
@@ -2334,7 +2125,6 @@ export type HttpFieldSecFetchUser = 'Sec-Fetch-User'
  * Also, the Sec-Token-Binding header field MUST NOT be
  * included in HTTP responses.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8473 | Specification → RFC 8473}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8473#section-2 | Documentation → RFC 8473 §2}
  */
 export type HttpFieldSecTokenBinding = 'Sec-Token-Binding'
@@ -2345,7 +2135,6 @@ export type HttpFieldSecTokenBinding = 'Sec-Token-Binding'
  * the client to confirm that the server is willing to initiate
  * the WebSocket connection.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6455 | Specification → RFC 6455}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6455#section-11.3.3 | Documentation → RFC 6455 §11.3.3}
  */
 export type HttpFieldSecWebSocketAccept = 'Sec-WebSocket-Accept'
@@ -2357,7 +2146,6 @@ export type HttpFieldSecWebSocketAccept = 'Sec-WebSocket-Accept'
  * server to the client, to agree on a set of protocol-level
  * extensions to use for the duration of the connection.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6455 | Specification → RFC 6455}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6455#section-11.3.2 | Documentation → RFC 6455 §11.3.2}
  */
 export type HttpFieldSecWebSocketExtensions = 'Sec-WebSocket-Extensions'
@@ -2368,7 +2156,6 @@ export type HttpFieldSecWebSocketExtensions = 'Sec-WebSocket-Extensions'
  * to provide part of the information used by the server to
  * prove that it received a valid WebSocket opening handshake.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6455 | Specification → RFC 6455}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6455#section-11.3.1 | Documentation → RFC 6455 §11.3.1}
  */
 export type HttpFieldSecWebSocketKey = 'Sec-WebSocket-Key'
@@ -2381,7 +2168,6 @@ export type HttpFieldSecWebSocketKey = 'Sec-WebSocket-Key'
  * both select a subprotocol and be sure that the server agreed
  * to serve that subprotocol.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6455 | Specification → RFC 6455}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6455#section-11.3.4 | Documentation → RFC 6455 §11.3.4}
  */
 export type HttpFieldSecWebSocketProtocol = 'Sec-WebSocket-Protocol'
@@ -2400,7 +2186,6 @@ export type HttpFieldSecWebSocketProtocol = 'Sec-WebSocket-Protocol'
  * understood by the server. In such a case, the header field
  * includes the protocol version(s) supported by the server.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6455 | Specification → RFC 6455}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6455#section-11.3.5 | Documentation → RFC 6455 §11.3.5}
  */
 export type HttpFieldSecWebSocketVersion = 'Sec-WebSocket-Version'
@@ -2412,7 +2197,6 @@ export type HttpFieldSecWebSocketVersion = 'Sec-WebSocket-Version'
  * that they are communicating with an S-HTTP compliant agent
  * and generate the appropriate cryptographic options headers.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2660 | Specification → RFC 2660}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2660#section-4.1 | Documentation → RFC 2660 §4.1}
  */
 export type HttpFieldSecurityScheme = 'Security-Scheme'
@@ -2425,7 +2209,6 @@ export type HttpFieldSecurityScheme = 'Security-Scheme'
  * requests to avoid particular server limitations, and for
  * analytics regarding server or operating system use.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.4.2 | Documentation → RFC 7231 §7.4.2}
  */
 export type HttpFieldServer = 'Server'
@@ -2435,7 +2218,6 @@ export type HttpFieldServer = 'Server'
  * more metrics and descriptions for the given request-response
  * cycle.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/server-timing | Specification → Server Timing}
  * @see {@link https://www.w3.org/TR/server-timing/#the-server-timing-header-field | Documentation → Server Timing}
  */
 export type HttpFieldServerTiming = 'Server-Timing'
@@ -2445,7 +2227,6 @@ export type HttpFieldServerTiming = 'Server-Timing'
  * will include the Service-Worker header. It indicates that
  * this request is a service worker's script resource request.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/service-workers-1 | Specification → Service Workers}
  * @see {@link https://www.w3.org/TR/service-workers-1/#service-worker-script-request | Documentation → Service Workers}
  */
 export type HttpFieldServiceWorker = 'Service-Worker'
@@ -2457,7 +2238,6 @@ export type HttpFieldServiceWorker = 'Service-Worker'
  * restriction, which limits the maximum allowed scope url that
  * the script can control, to the given value.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/service-workers-1 | Specification → Service Workers}
  * @see {@link https://www.w3.org/TR/service-workers-1/#service-worker-script-response | Documentation → Service Workers}
  */
 export type HttpFieldServiceWorkerAllowed = 'Service-Worker-Allowed'
@@ -2468,7 +2248,6 @@ export type HttpFieldServiceWorkerAllowed = 'Service-Worker-Allowed'
  * the user agent will preload the response for the navigation
  * request.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/service-workers-1 | Specification → Service Workers}
  * @see {@link https://www.w3.org/TR/service-workers-1/#service-worker-navigation-preload-response | Documentation → Service Workers}
  */
 export type HttpFieldServiceWorkerNavigationPreload =
@@ -2478,9 +2257,7 @@ export type HttpFieldServiceWorkerNavigationPreload =
  * The Set-Cookie HTTP response header is used to send cookies
  * from the server to the user agent.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-rfc6265bis | Specification → Internet Draft ietf-httpbis-rfc6265bis}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis#section-4.1 | Documentation → Internet Draft ietf-httpbis-rfc6265bis §4.1}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6265 | Specification → RFC 6265}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6265#section-4.1 | Documentation → RFC 6265 §4.1}
  */
 export type HttpFieldSetCookie = 'Set-Cookie'
@@ -2490,7 +2267,6 @@ export type HttpFieldSetCookie = 'Set-Cookie'
  * do so, it returns an extra response header to the client,
  * Set-Cookie2.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2965 | Specification → RFC 2965}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2965#section-3.2 | Documentation → RFC 2965 §3.2}
  */
 export type HttpFieldSetCookie2 = 'Set-Cookie2'
@@ -2504,7 +2280,6 @@ export type HttpFieldSetCookie2 = 'Set-Cookie2'
  * Sequence containing the signature value for the message
  * signature identified by the label.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures | Specification → Internet Draft ietf-httpbis-message-signatures}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.2 | Documentation → Internet Draft ietf-httpbis-message-signatures §4.2}
  */
 export type HttpFieldSignature = 'Signature'
@@ -2515,7 +2290,6 @@ export type HttpFieldSignature = 'Signature'
  * generated from components within the HTTP message. Each
  * member describes a single message signature.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures | Specification → Internet Draft ietf-httpbis-message-signatures}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.1 | Documentation → Internet Draft ietf-httpbis-message-signatures §4.1}
  */
 export type HttpFieldSignatureInput = 'Signature-Input'
@@ -2526,7 +2300,6 @@ export type HttpFieldSignatureInput = 'Signature-Input'
  * header's value as part of any URIs that would normally be
  * used to retrieve the to-be-created Entry or Media Resources.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/5023 | Specification → RFC 5023}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc5023#section-9.7 | Documentation → RFC 5023 §9.7}
  */
 export type HttpFieldSlug = 'Slug'
@@ -2536,7 +2309,6 @@ export type HttpFieldSlug = 'Slug'
  * the browser where to find the source map for a JavaScript
  * file.
  *
- * @see {@link https://sourcemaps.info/spec.html | Specification → Source Map Revision 3 Proposal}
  * @see {@link https://sourcemaps.info/spec.html#h.lmz475t4mvbx | Documentation → Source Map Revision 3 Proposal}
  */
 export type HttpFieldSourceMap = 'SourceMap'
@@ -2546,7 +2318,6 @@ export type HttpFieldSourceMap = 'SourceMap'
  * (Processing) status code to inform the client as to the
  * status of a method.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2518 | Specification → RFC 2518}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2518#section-9.7 | Documentation → RFC 2518 §9.7}
  */
 export type HttpFieldStatusUri = 'Status-URI'
@@ -2557,7 +2328,6 @@ export type HttpFieldStatusUri = 'Status-URI'
  * the HSTS Policy in regards to the host emitting the response
  * message containing this header field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/6797 | Specification → RFC 6797}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc6797#section-6.1 | Documentation → RFC 6797 §6.1}
  */
 export type HttpFieldStrictTransportSecurity = 'Strict-Transport-Security'
@@ -2569,7 +2339,6 @@ export type HttpFieldStrictTransportSecurity = 'Strict-Transport-Security'
  * one resource instance for the instance body of the resource
  * instance specified by the client's request.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/mogul-http-dupsup | Specification → Internet Draft mogul-http-dupsup}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-mogul-http-dupsup#section-5.2.1 | Documentation → Internet Draft mogul-http-dupsup §5.2.1}
  */
 export type HttpFieldSubOk = 'SubOK'
@@ -2581,7 +2350,6 @@ export type HttpFieldSubOk = 'SubOK'
  * if the client's request included the "inform" directive in a
  * SubOK request header field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/mogul-http-dupsup | Specification → Internet Draft mogul-http-dupsup}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-mogul-http-dupsup#section-5.2.2 | Documentation → Internet Draft mogul-http-dupsup §5.2.2}
  */
 export type HttpFieldSubst = 'Subst'
@@ -2595,7 +2363,6 @@ export type HttpFieldSubst = 'Subst'
  * timestamp which advertises the point in time when the
  * resource is expected to become unresponsive.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8594 | Specification → RFC 8594}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8594#section-3 | Documentation → RFC 8594 §3}
  */
 export type HttpFieldSunset = 'Sunset'
@@ -2607,7 +2374,6 @@ export type HttpFieldSunset = 'Sunset'
  * caching, processing) that a surrogate is willing to perform.
  * They follow the form of product tokens in HTTP.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/edge-arch | Specification → Edge Architecture Specification}
  * @see {@link https://www.w3.org/TR/edge-arch/ | Documentation → Edge Architecture Specification}
  */
 export type HttpFieldSurrogateCapability = 'Surrogate-Capability'
@@ -2618,7 +2384,6 @@ export type HttpFieldSurrogateCapability = 'Surrogate-Capability'
  * with control directives. Currently defined directives
  * control processing and cache behavior.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/edge-arch | Specification → Edge Architecture Specification}
  * @see {@link https://www.w3.org/TR/edge-arch/ | Documentation → Edge Architecture Specification}
  */
 export type HttpFieldSurrogateControl = 'Surrogate-Control'
@@ -2627,7 +2392,6 @@ export type HttpFieldSurrogateControl = 'Surrogate-Control'
  * The TCN response header is used by a server to signal that
  * the resource is transparently negotiated.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2295 | Specification → RFC 2295}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2295#section-8.5 | Documentation → RFC 2295 §8.5}
  */
 export type HttpFieldTcn = 'TCN'
@@ -2638,7 +2402,6 @@ export type HttpFieldTcn = 'TCN'
  * response, and whether or not the client is willing to accept
  * trailer fields in a chunked transfer coding.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-4.3 | Documentation → RFC 7230 §4.3}
  */
 export type HttpFieldTe = 'TE'
@@ -2649,7 +2412,6 @@ export type HttpFieldTe = 'TE'
  * TTL header field contains a value in seconds that suggests
  * how long a push message is retained by the push service.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8030 | Specification → RFC 8030}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8030#section-5.2 | Documentation → RFC 8030 §5.2}
  */
 export type HttpFieldTtl = 'TTL'
@@ -2659,7 +2421,6 @@ export type HttpFieldTtl = 'TTL'
  * requests. However, the server is not required to honor or
  * even consider these requests.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4918 | Specification → RFC 4918}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4918#section-10.7 | Documentation → RFC 4918 §10.7}
  */
 export type HttpFieldTimeout = 'Timeout'
@@ -2670,7 +2431,6 @@ export type HttpFieldTimeout = 'Timeout'
  * allowed to see values of attributes that would have been
  * zero due to the cross-origin restrictions.
  *
- * @see {@link https://www.w3.org/TR/resource-timing/ | Specification → Resource Timing}
  * @see {@link https://www.w3.org/TR/resource-timing/#timing-allow-origin | Documentation → Resource Timing}
  */
 export type HttpFieldTimingAllowOrigin = 'Timing-Allow-Origin'
@@ -2679,7 +2439,6 @@ export type HttpFieldTimingAllowOrigin = 'Timing-Allow-Origin'
  * The title of the document. Not part of the document.
  * Isomorphic with the <title> element in HTML.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/4229 | Specification → RFC 4229}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc4229#section-2.2.11 | Documentation → RFC 4229 §2.2.11}
  */
 export type HttpFieldTitle = 'Title'
@@ -2691,7 +2450,6 @@ export type HttpFieldTitle = 'Title'
  * indicating that a state-changing request has resulted in an
  * interactive change to the tracking status.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/tracking-dnt | Specification → Tracking Preference Expression (DNT)}
  * @see {@link https://www.w3.org/TR/tracking-dnt/#response-header-field | Documentation → Tracking Preference Expression (DNT)}
  */
 export type HttpFieldTk = 'Tk'
@@ -2702,7 +2460,6 @@ export type HttpFieldTk = 'Tk'
  * the same subscription and does not convey any other
  * semantics.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8030 | Specification → RFC 8030}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8030#section-5.4 | Documentation → RFC 8030 §5.4}
  */
 export type HttpFieldTopic = 'Topic'
@@ -2715,7 +2472,6 @@ export type HttpFieldTopic = 'Topic'
  * before the message body to indicate which fields will be
  * present in the trailers.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-4.4 | Documentation → RFC 7230 §4.4}
  */
 export type HttpFieldTrailer = 'Trailer'
@@ -2726,7 +2482,6 @@ export type HttpFieldTrailer = 'Trailer'
  * have been (or will be) applied to the payload body in order
  * to form the message body.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-3.3.1 | Documentation → RFC 7230 §3.3.1}
  */
 export type HttpFieldTransferEncoding = 'Transfer-Encoding'
@@ -2737,7 +2492,6 @@ export type HttpFieldTransferEncoding = 'Transfer-Encoding'
  * that will be used within the tunnel, or the set of protocols
  * that might be used within the tunnel.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-tunnel-protocol | Specification → Internet Draft ietf-httpbis-tunnel-protocol}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-tunnel-protocol#section-2 | Documentation → Internet Draft ietf-httpbis-tunnel-protocol §2}
  */
 export type HttpFieldTunnelProtocol = 'Tunnel-Protocol'
@@ -2757,7 +2511,6 @@ export type HttpFieldTunnelProtocol = 'Tunnel-Protocol'
  * header field. The URI header field is therefore deprecated
  * in favor of those other fields.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2068 | Specification → RFC 2068}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2068#section-19.6.2.5 | Documentation → RFC 2068 §19.6.2.5}
  */
 export type HttpFieldUri = 'URI'
@@ -2771,7 +2524,6 @@ export type HttpFieldUri = 'URI'
  * order of descending preference, before sending the final
  * response.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-6.7 | Documentation → RFC 7230 §6.7}
  */
 export type HttpFieldUpgrade = 'Upgrade'
@@ -2784,7 +2536,6 @@ export type HttpFieldUpgrade = 'Upgrade'
  * upgrade-insecure-requests directive in order to make that
  * preference as seamless as possible to provide.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/upgrade-insecure-requests | Specification → Upgrade Insecure Requests}
  * @see {@link https://www.w3.org/TR/upgrade-insecure-requests/#preference | Documentation → Upgrade Insecure Requests}
  */
 export type HttpFieldUpgradeInsecureRequests = 'Upgrade-Insecure-Requests'
@@ -2794,7 +2545,6 @@ export type HttpFieldUpgradeInsecureRequests = 'Upgrade-Insecure-Requests'
  * indicates whether the corresponding upload is considered
  * complete. The Upload-Complete field value is a Boolean.
  *
- * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/ | Specification → Internet Draft ietf-httpbis-resumable-upload}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-complete | Documentation → Internet Draft ietf-httpbis-resumable-upload}
  */
 export type HttpFieldUploadComplete = 'Upload-Complete'
@@ -2805,7 +2555,6 @@ export type HttpFieldUploadComplete = 'Upload-Complete'
  * counted in bytes. The Upload-Offset field value is an
  * Integer.
  *
- * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/ | Specification → Internet Draft ietf-httpbis-resumable-upload}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-offset | Documentation → Internet Draft ietf-httpbis-resumable-upload}
  */
 export type HttpFieldUploadOffset = 'Upload-Offset'
@@ -2818,7 +2567,6 @@ export type HttpFieldUploadOffset = 'Upload-Offset'
  * message without the Urgency header field defaults to a value
  * of "normal".
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/8030 | Specification → RFC 8030}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc8030#section-5.3 | Documentation → RFC 8030 §5.3}
  */
 export type HttpFieldUrgency = 'Urgency'
@@ -2829,7 +2577,6 @@ export type HttpFieldUrgency = 'Urgency'
  * requests for URLs that match the rules specified in the
  * "Use-As-Dictionary" response header.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary | Specification → Internet Draft ietf-httpbis-compression-dictionary}
  * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1 | Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.1}
  */
 export type HttpFieldUseAsDictionary = 'Use-As-Dictionary'
@@ -2842,7 +2589,6 @@ export type HttpFieldUseAsDictionary = 'Use-As-Dictionary'
  * responses to avoid particular user agent limitations, and
  * for analytics regarding browser or operating system use.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-5.5.3 | Documentation → RFC 7231 §5.5.3}
  */
 export type HttpFieldUserAgent = 'User-Agent'
@@ -2852,7 +2598,6 @@ export type HttpFieldUserAgent = 'User-Agent'
  * indicate the value(s) from the Variants header field that
  * identify the representation it occurs within.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-variants | Specification → Internet Draft ietf-httpbis-variants}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-variants#section-3 | Documentation → Internet Draft ietf-httpbis-variants §3}
  */
 export type HttpFieldVariantKey = 'Variant-Key'
@@ -2864,7 +2609,6 @@ export type HttpFieldVariantKey = 'Variant-Key'
  * entity headers) contained in the response, rather than to
  * the response as a whole.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/2295 | Specification → RFC 2295}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc2295#section-8.6 | Documentation → RFC 2295 §8.6}
  */
 export type HttpFieldVariantVary = 'Variant-Vary'
@@ -2876,7 +2620,6 @@ export type HttpFieldVariantVary = 'Variant-Vary'
  * request header fields that it varies on, along with the
  * values that are available for each.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-variants | Specification → Internet Draft ietf-httpbis-variants}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-variants#section-2 | Documentation → Internet Draft ietf-httpbis-variants §2}
  */
 export type HttpFieldVariants = 'Variants'
@@ -2889,7 +2632,6 @@ export type HttpFieldVariants = 'Variants'
  * response. The value consists of either a single asterisk
  * ("*") or a list of header field names (case-insensitive).
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7231 | Specification → RFC 7231}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.4 | Documentation → RFC 7231 §7.1.4}
  */
 export type HttpFieldVary = 'Vary'
@@ -2904,7 +2646,6 @@ export type HttpFieldVary = 'Vary'
  * loops, and identifying the protocol capabilities of senders
  * along the request/response chain.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7230 | Specification → RFC 7230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7230#section-5.7.1 | Documentation → RFC 7230 §5.7.1}
  */
 export type HttpFieldVia = 'Via'
@@ -2916,9 +2657,7 @@ export type HttpFieldVia = 'Via'
  * and a WWW-Authenticate header as per the framework defined
  * above.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7616 | Specification → RFC 7616}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7616#section-3.3 | Documentation → RFC 7616 §3.3}
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7235 | Specification → RFC 7235}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7235#section-4.4 | Documentation → RFC 7235 §4.4}
  */
 export type HttpFieldWwwAuthenticate = 'WWW-Authenticate'
@@ -2929,7 +2668,6 @@ export type HttpFieldWwwAuthenticate = 'WWW-Authenticate'
  * request URI and representation metadata, using the
  * Content-Digest field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers | Specification → Internet Draft ietf-httpbis-digest-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-4 | Documentation → Internet Draft ietf-httpbis-digest-headers §4}
  */
 export type HttpFieldWantContentDigest = 'Want-Content-Digest'
@@ -2939,7 +2677,6 @@ export type HttpFieldWantContentDigest = 'Want-Content-Digest'
  * desire to receive an instance digest on messages associated
  * with the Request-URI.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/3230 | Specification → RFC 3230}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc3230#section-4.3.1 | Documentation → RFC 3230 §4.3.1}
  */
 export type HttpFieldWantDigest = 'Want-Digest'
@@ -2950,7 +2687,6 @@ export type HttpFieldWantDigest = 'Want-Digest'
  * the request URI and representation metadata, using the
  * Repr-Digest field.
  *
- * @see {@link https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers | Specification → Internet Draft ietf-httpbis-digest-headers}
  * @see {@link https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-4 | Documentation → Internet Draft ietf-httpbis-digest-headers §4}
  */
 export type HttpFieldWantReprDigest = 'Want-Repr-Digest'
@@ -2963,7 +2699,6 @@ export type HttpFieldWantReprDigest = 'Want-Repr-Digest'
  * incorrectness introduced by caching operations or
  * transformations applied to the payload of the message.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7234 | Specification → RFC 7234}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7234#section-5.5 | Documentation → RFC 7234 §5.5}
  */
 export type HttpFieldWarning = 'Warning'
@@ -2973,7 +2708,6 @@ export type HttpFieldWarning = 'Warning'
  * require checking of a response’s `Content-Type` header
  * against the destination of a request.
  *
- * @see {@link https://fetch.spec.whatwg.org/ | Specification → WHATWG Fetch Standard}
  * @see {@link https://fetch.spec.whatwg.org/#x-content-type-options-header | Documentation → WHATWG Fetch Standard}
  */
 export type HttpFieldXContentTypeOptions = 'X-Content-Type-Options'
@@ -2987,7 +2721,6 @@ export type HttpFieldXContentTypeOptions = 'X-Content-Type-Options'
  * that their content is not embedded into other pages or
  * frames.
  *
- * @see {@link https://webconcepts.info/specs/IETF/RFC/7034 | Specification → RFC 7034}
  * @see {@link https://datatracker.ietf.org/doc/html/rfc7034#section-2 | Documentation → RFC 7034 §2}
  */
 export type HttpFieldXFrameOptions = 'X-Frame-Options'
@@ -2996,7 +2729,6 @@ export type HttpFieldXFrameOptions = 'X-Frame-Options'
  * The traceparent header represents the incoming request in a
  * tracing system in a common format.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/trace-context | Specification → Trace Context}
  * @see {@link https://www.w3.org/TR/trace-context/#traceparent-field | Documentation → Trace Context}
  */
 export type HttpFieldTraceparent = 'traceparent'
@@ -3005,7 +2737,6 @@ export type HttpFieldTraceparent = 'traceparent'
  * The tracestate HTTP header field conveys information about
  * request position in multiple distributed tracing graphs.
  *
- * @see {@link https://webconcepts.info/specs/W3C/TR/trace-context | Specification → Trace Context}
  * @see {@link https://www.w3.org/TR/trace-context/#tracestate-field | Documentation → Trace Context}
  */
 export type HttpFieldTracestate = 'tracestate'

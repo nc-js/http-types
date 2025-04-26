@@ -1,5 +1,6 @@
 import { union } from '@nc/typegen/composite'
 import { alias, exportThis } from '@nc/typegen/types'
+import { DocBlock } from './utils/docs.ts'
 import { httpDocs } from './utils/http.ts'
 import {
 	aliasWithDocBlock,
@@ -7,16 +8,45 @@ import {
 	generate,
 } from './utils/generator.ts'
 
-type Digit = '1' | '2' | '3' | '4' | '5'
+const aliasData: Record<string, {
+	summary: string
+}> = {
+	HttpInfoStatusCode: {
+		summary: 'HTTP informational status codes (1xx)',
+	},
+	HttpSuccessStatusCode: {
+		summary: 'HTTP success status codes (2xx)',
+	},
+	HttpRedirectStatusCode: {
+		summary: 'HTTP redirect status codes (3xx)',
+	},
+	HttpClientStatusCode: {
+		summary: 'HTTP client status codes (4xx)',
+	},
+	HttpServerStatusCode: {
+		summary: 'HTTP server status codes (5xx)',
+	},
+	HttpStatusCode: {
+		summary: 'Response status codes for an HTTP request',
+	},
+}
 
+type Digit = '1' | '2' | '3' | '4' | '5'
 function aliasCode(
 	kind: string,
 	types: string[],
 	newlines: number = 2,
 ): string {
-	return exportThis(
-		alias(`Http${kind}StatusCode`, union(types, 0), true),
-	) + '\n'.repeat(newlines)
+	const aliasName = `Http${kind}StatusCode`
+	const docBlock = new DocBlock()
+	docBlock.summary = aliasData[aliasName].summary
+
+	return aliasWithDocBlock(
+		docBlock,
+		exportThis(
+			alias(aliasName, union(types, 0), true),
+		) + '\n'.repeat(newlines),
+	)
 }
 
 generate({

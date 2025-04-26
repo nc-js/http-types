@@ -17,6 +17,7 @@ export class UrlLabelProvider {
 		const provider = this.providers.find((provider) =>
 			provider.matchesHostName(hostName)
 		)
+
 		if (provider) {
 			return provider.provideLabel(detail, includeFragment)
 		} else {
