@@ -1,7 +1,7 @@
 import { toPascalCase } from '@std/text'
 import { union } from '@nc/typegen/composite'
-import { alias, exportThis } from '@nc/typegen/types'
-import { singleQuoteLit } from '@nc/typegen/strings'
+import { alias, exclude, exportThis } from '@nc/typegen/types'
+import { singleQuoteLit, type Stringable } from '@nc/typegen/strings'
 import {
 	aliasWithDocBlock,
 	appendTextFile,
@@ -9,6 +9,79 @@ import {
 } from './utils/generator.ts'
 import { DocBlock } from './utils/docs.ts'
 import { httpDocs, isForbiddenRequestField } from './utils/http.ts'
+
+type AliasRecord = {
+	summary: string
+	definition: Stringable | ((types: string[]) => string)
+}
+
+type AliasName =
+	| 'HttpField'
+	| 'HttpRequestField'
+	| 'HttpResponseField'
+	| 'HttpForbiddenRequestField'
+	| 'HttpForbiddenResponseField'
+
+const aliases: Record<AliasName, AliasRecord> = {
+	HttpField: {
+		summary:
+			'Key-value pairs attached as metadata to an HTTP request or response',
+		definition: (types) => union(types, 0),
+	},
+	HttpForbiddenRequestField: {
+		summary: 'HTTP fields forbidden from usage in HTTP requests',
+		definition: (types) => union(types, 0),
+	},
+	HttpForbiddenResponseField: {
+		summary: 'HTTP fields forbidden from usage in HTTP responses',
+		definition: union([
+			'HttpFieldSetCookie',
+			'HttpFieldSetCookie2',
+		]),
+	},
+	HttpRequestField: {
+		summary: 'HTTP fields allowed for using within HTTP requests',
+		definition: exclude(
+			union(['HttpField']),
+			union(['HttpForbiddenRequestField']),
+		),
+	},
+	HttpResponseField: {
+		summary: 'HTTP fields allowed for using within HTTP responses',
+		definition: exclude(
+			union(['HttpField']),
+			union(['HttpForbiddenResponseField']),
+		),
+	},
+}
+
+function topAliases(
+	destPath: string,
+	fields: string[],
+	forbiddenRequestFields: string[],
+) {
+	Object.entries(aliases).forEach((entry) => {
+		const [key, value] = entry
+		let definition: Stringable
+
+		if (typeof value.definition === 'function') {
+			const inputTypes = key === 'HttpForbiddenRequestField'
+				? forbiddenRequestFields
+				: fields
+			definition = value.definition(inputTypes)
+		} else {
+			definition = value.definition
+		}
+
+		appendTextFile(
+			destPath,
+			aliasWithDocBlock(
+				new DocBlock(value.summary),
+				exportThis(alias(key, definition)),
+			),
+		)
+	})
+}
 
 generate({
 	path: 'fields.ts',
@@ -36,35 +109,6 @@ generate({
 			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
-		const fieldUnion = exportThis(alias(
-			'HttpField',
-			union(fieldTypes, 0),
-			true,
-		))
-		appendTextFile(
-			destPath,
-			aliasWithDocBlock(
-				new DocBlock(
-					'Key-value pairs attached as metadata to an HTTP request or response',
-				),
-				fieldUnion,
-			) +
-				'\n\n',
-		)
-
-		const forbiddenRequestFieldUnion = exportThis(alias(
-			'HttpForbiddenRequestField',
-			union(forbiddenRequestFields, 0),
-			true,
-		))
-		appendTextFile(
-			destPath,
-			aliasWithDocBlock(
-				new DocBlock(
-					'HTTP fields forbidden from usage in HTTP requests',
-				),
-				forbiddenRequestFieldUnion,
-			) + '\n',
-		)
+		topAliases(destPath, fieldTypes, forbiddenRequestFields)
 	},
 })
