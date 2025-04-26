@@ -10,14 +10,15 @@
 		]
 	},
 	"exports": {
-		".": "./src/mod.ts"
+		"./fields": "./src/fields.ts",
+		"./methods": "./src/methods.ts",
+		"./status-codes": "./src/status-codes.ts"
 	},
 	"tasks": {
 		"build": "deno task \"build-*\" ; deno fmt",
 		"build-methods": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/methods.ts",
 		"build-fields": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/fields.ts",
 		"build-status-codes": "deno run --allow-read=./build --allow-write=./src --no-prompt ./build/status-codes.ts",
-		"dev": "deno test --watch src/mod.ts"
 	},
 	"imports": {
 		"@nc/typegen": "jsr:@nc/typegen@^0.1.1",
