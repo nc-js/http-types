@@ -41,23 +41,7 @@ generate({
 			appendTextFile(destPath, `${docBlock}\n${typeAlias}\n\n`)
 
 			const digit = statusCodeName[0]
-			switch (digit) {
-				case '1':
-					categorized['1'].push(statusCodeTypeName)
-					break
-				case '2':
-					categorized['2'].push(statusCodeTypeName)
-					break
-				case '3':
-					categorized['3'].push(statusCodeTypeName)
-					break
-				case '4':
-					categorized['4'].push(statusCodeTypeName)
-					break
-				case '5':
-					categorized['5'].push(statusCodeTypeName)
-					break
-			}
+			categorized[digit as Digit].push(statusCodeTypeName)
 		}
 
 		appendTextFile(destPath, aliasCode('Info', categorized[1]))
