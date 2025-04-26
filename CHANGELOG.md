@@ -2,6 +2,10 @@
 
 ## v0.1.2 (Unreleased)
 ### Features
+- Adds the following type aliases for HTTP fields:
+  - `HttpForbiddenResponseField`
+  - `HttpRequestField`
+  - `HttpResponseField`
 - Adds the following HTTP fields from the WHATWG Fetch Standard:
   - `Sec-Purpose` field as type alias `HttpFieldSecPurpose`
 - Adds the following HTTP fields from the WHATWG HTML Standard:

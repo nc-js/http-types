@@ -1,7 +1,7 @@
 import { toPascalCase } from '@std/text'
 import { union } from '@nc/typegen/composite'
-import { alias, exportThis } from '@nc/typegen/types'
-import { singleQuoteLit } from '@nc/typegen/strings'
+import { alias, exclude, exportThis } from '@nc/typegen/types'
+import { singleQuoteLit, stringLits } from '@nc/typegen/strings'
 import {
 	aliasWithDocBlock,
 	appendTextFile,
@@ -36,35 +36,93 @@ generate({
 			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
-		const fieldUnion = exportThis(alias(
-			'HttpField',
-			union(fieldTypes, 0),
-			true,
-		))
-		appendTextFile(
-			destPath,
-			aliasWithDocBlock(
-				new DocBlock(
-					'Key-value pairs attached as metadata to an HTTP request or response',
-				),
-				fieldUnion,
-			) +
-				'\n\n',
-		)
-
-		const forbiddenRequestFieldUnion = exportThis(alias(
-			'HttpForbiddenRequestField',
-			union(forbiddenRequestFields, 0),
-			true,
-		))
-		appendTextFile(
-			destPath,
-			aliasWithDocBlock(
-				new DocBlock(
-					'HTTP fields forbidden from usage in HTTP requests',
-				),
-				forbiddenRequestFieldUnion,
-			) + '\n',
-		)
+		allFields(destPath, fieldTypes)
+		forbiddenRequestField(destPath, forbiddenRequestFields)
+		forbiddenResponseField(destPath)
+		requestResponseFields(destPath)
 	},
 })
+
+function allFields(destPath: string, fields: string[]): void {
+	const fieldUnion = exportThis(alias(
+		'HttpField',
+		union(fields, 0),
+		true,
+	))
+	appendTextFile(
+		destPath,
+		aliasWithDocBlock(
+			new DocBlock(
+				'Key-value pairs attached as metadata to an HTTP request or response',
+			),
+			fieldUnion,
+		) +
+			'\n\n',
+	)
+}
+
+function forbiddenRequestField(destPath: string, fields: string[]): void {
+	const forbiddenRequestFieldUnion = exportThis(alias(
+		'HttpForbiddenRequestField',
+		union(fields, 0),
+		true,
+	))
+	appendTextFile(
+		destPath,
+		aliasWithDocBlock(
+			new DocBlock(
+				'HTTP fields forbidden from usage in HTTP requests',
+			),
+			forbiddenRequestFieldUnion,
+		) + '\n',
+	)
+}
+
+function forbiddenResponseField(destPath: string): void {
+	const forbiddenResponseField = exportThis(alias(
+		'HttpForbiddenResponseField',
+		union(stringLits([
+			'HttpHeaderSetCookie',
+			'HttpHeaderSetCookie2',
+		])),
+	))
+	appendTextFile(
+		destPath,
+		aliasWithDocBlock(
+			new DocBlock(
+				'HTTP fields forbidden from usage in HTTP responses',
+			),
+			forbiddenResponseField,
+		) + '\n',
+	)
+}
+
+function requestResponseFields(destPath: string): void {
+	const requestField = exportThis(alias(
+		'HttpRequestField',
+		exclude(union(['HttpField']), union(['HttpForbiddenRequestField'])),
+	))
+	appendTextFile(
+		destPath,
+		aliasWithDocBlock(
+			new DocBlock(
+				'HTTP fields allowed for using within HTTP requests',
+			),
+			requestField,
+		) + '\n',
+	)
+
+	const responseField = exportThis(alias(
+		'HttpResponseField',
+		exclude(union(['HttpField']), union(['HttpForbiddenResponseField'])),
+	))
+	appendTextFile(
+		destPath,
+		aliasWithDocBlock(
+			new DocBlock(
+				'HTTP fields allowed for using within HTTP responses',
+			),
+			responseField,
+		) + '\n',
+	)
+}

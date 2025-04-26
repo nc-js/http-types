@@ -3091,3 +3091,20 @@ export type HttpForbiddenRequestField =
 	| HttpFieldTransferEncoding
 	| HttpFieldUpgrade
 	| HttpFieldVia
+
+/**
+ * HTTP fields forbidden from usage in HTTP responses
+ */
+export type HttpForbiddenResponseField =
+	| 'HttpHeaderSetCookie'
+	| 'HttpHeaderSetCookie2'
+
+/**
+ * HTTP fields allowed for using within HTTP requests
+ */
+export type HttpRequestField = Exclude<HttpField, HttpForbiddenRequestField>
+
+/**
+ * HTTP fields allowed for using within HTTP responses
+ */
+export type HttpResponseField = Exclude<HttpField, HttpForbiddenResponseField>
