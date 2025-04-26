@@ -7,6 +7,7 @@ import {
 	generate,
 } from './utils/generator.ts'
 import { getMethodTypeName, httpDocs } from './utils/http.ts'
+import { DocBlock } from './utils/docs.ts'
 
 generate({
 	path: 'methods.ts',
@@ -28,9 +29,15 @@ generate({
 			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
+		const exportedAlias = exportThis(
+			alias('HttpMethod', union(types, 0), true),
+		)
 		appendTextFile(
 			destPath,
-			exportThis(alias('HttpMethod', union(types, 0), true)) +
+			aliasWithDocBlock(
+				new DocBlock('HTTP verbs that carry semantics for a request'),
+				exportedAlias,
+			) +
 				'\n',
 		)
 	},

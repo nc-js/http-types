@@ -2736,6 +2736,10 @@ export type HttpFieldTraceparent = 'traceparent'
  */
 export type HttpFieldTracestate = 'tracestate'
 
+/**
+ * Key-value pairs attached as metadata to an HTTP request or
+ * response
+ */
 export type HttpField =
 	| HttpFieldAIm
 	| HttpFieldAlpn
@@ -2996,6 +3000,9 @@ export type HttpField =
 	| HttpFieldTraceparent
 	| HttpFieldTracestate
 
+/**
+ * HTTP fields forbidden from usage in HTTP requests
+ */
 export type HttpForbiddenRequestField =
 	| HttpFieldAcceptCharset
 	| HttpFieldAcceptEncoding

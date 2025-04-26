@@ -454,6 +454,9 @@ export type HttpMethodUpdateRedirectRef = 'UPDATEREDIRECTREF'
  */
 export type HttpMethodVersionControl = 'VERSION-CONTROL'
 
+/**
+ * HTTP verbs that carry semantics for a request
+ */
 export type HttpMethod =
 	| HttpMethodAcl
 	| HttpMethodBaselineControl

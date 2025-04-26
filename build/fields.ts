@@ -7,6 +7,7 @@ import {
 	appendTextFile,
 	generate,
 } from './utils/generator.ts'
+import { DocBlock } from './utils/docs.ts'
 import { httpDocs, isForbiddenRequestField } from './utils/http.ts'
 
 generate({
@@ -40,13 +41,30 @@ generate({
 			union(fieldTypes, 0),
 			true,
 		))
-		appendTextFile(destPath, fieldUnion + '\n\n')
+		appendTextFile(
+			destPath,
+			aliasWithDocBlock(
+				new DocBlock(
+					'Key-value pairs attached as metadata to an HTTP request or response',
+				),
+				fieldUnion,
+			) +
+				'\n\n',
+		)
 
 		const forbiddenRequestFieldUnion = exportThis(alias(
 			'HttpForbiddenRequestField',
 			union(forbiddenRequestFields, 0),
 			true,
 		))
-		appendTextFile(destPath, forbiddenRequestFieldUnion + '\n')
+		appendTextFile(
+			destPath,
+			aliasWithDocBlock(
+				new DocBlock(
+					'HTTP fields forbidden from usage in HTTP requests',
+				),
+				forbiddenRequestFieldUnion,
+			) + '\n',
+		)
 	},
 })
