@@ -1621,8 +1621,21 @@
 				"id": "https://webconcepts.info/concepts/http-header/Cross-Origin-Embedder-Policy",
 				"details": [
 					{
-						"description": "The Cross-Origin-Embedder-Policy header allows controlling how cross-origin resources should load, based on a specific policy/set of permissions.",
+						"description": "The `Cross-Origin-Embedder-Policy` HTTP response headers allow a server to declare an embedder policy for an environment settings object.",
 						"documentation": "https://html.spec.whatwg.org/#cross-origin-embedder-policy",
+						"specification": "https://html.spec.whatwg.org/",
+						"spec-name": "WHATWG HTML Standard"
+					}
+				]
+			},
+			{
+				"value": "Cross-Origin-Embedder-Policy-Report-Only",
+				"concept": "https://webconcepts.info/concepts/http-header/",
+				"id": "https://webconcepts.info/concepts/http-header/Cross-Origin-Embedder-Policy-Report-Only",
+				"details": [
+					{
+						"description": "The `Cross-Origin-Embedder-Policy-Report-Only` HTTP response headers allow a server to declare an embedder policy for an environment settings object.",
+						"documentation": "https://html.spec.whatwg.org/#cross-origin-embedder-policy-report-only",
 						"specification": "https://html.spec.whatwg.org/",
 						"spec-name": "WHATWG HTML Standard"
 					}
@@ -1636,6 +1649,19 @@
 					{
 						"description": "A cross-origin opener policy value allows a document which is navigated to in a top-level browsing context to force the creation of a new top-level browsing context, and a corresponding group.",
 						"documentation": "https://html.spec.whatwg.org/#cross-origin-opener-policy",
+						"specification": "https://html.spec.whatwg.org/",
+						"spec-name": "WHATWG HTML Standard"
+					}
+				]
+			},
+			{
+				"value": "Cross-Origin-Opener-Policy-Report-Only",
+				"concept": "https://webconcepts.info/concepts/http-header/",
+				"id": "https://webconcepts.info/concepts/http-header/Cross-Origin-Opener-Policy-Report-Only",
+				"details": [
+					{
+						"description": "The Cross-Origin-Opener-Policy-Report-Only HTTP response header is a Structured Header whose value must be a token.\nValid Cross-Origin-Opener-Policy-Report-Only values include \"unsafe-none\", \"same-origin-allow-popups\" and \"same-origin\". These values may have a parameter specifying a string which represents the endpoint for violation reporting.",
+						"documentation": "https://html.spec.whatwg.org/#cross-origin-opener-policy-report-only",
 						"specification": "https://html.spec.whatwg.org/",
 						"spec-name": "WHATWG HTML Standard"
 					}

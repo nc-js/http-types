@@ -807,13 +807,23 @@ export type HttpFieldCookie = 'Cookie'
 export type HttpFieldCookie2 = 'Cookie2'
 
 /**
- * The Cross-Origin-Embedder-Policy header allows controlling
- * how cross-origin resources should load, based on a specific
- * policy/set of permissions.
+ * The `Cross-Origin-Embedder-Policy` HTTP response headers
+ * allow a server to declare an embedder policy for an
+ * environment settings object.
  *
  * @see {@link https://html.spec.whatwg.org/#cross-origin-embedder-policy | Documentation → WHATWG HTML Standard}
  */
 export type HttpFieldCrossOriginEmbedderPolicy = 'Cross-Origin-Embedder-Policy'
+
+/**
+ * The `Cross-Origin-Embedder-Policy-Report-Only` HTTP response
+ * headers allow a server to declare an embedder policy for an
+ * environment settings object.
+ *
+ * @see {@link https://html.spec.whatwg.org/#cross-origin-embedder-policy-report-only | Documentation → WHATWG HTML Standard}
+ */
+export type HttpFieldCrossOriginEmbedderPolicyReportOnly =
+	'Cross-Origin-Embedder-Policy-Report-Only'
 
 /**
  * A cross-origin opener policy value allows a document which
@@ -824,6 +834,19 @@ export type HttpFieldCrossOriginEmbedderPolicy = 'Cross-Origin-Embedder-Policy'
  * @see {@link https://html.spec.whatwg.org/#cross-origin-opener-policy | Documentation → WHATWG HTML Standard}
  */
 export type HttpFieldCrossOriginOpenerPolicy = 'Cross-Origin-Opener-Policy'
+
+/**
+ * The Cross-Origin-Opener-Policy-Report-Only HTTP response
+ * header is a Structured Header whose value must be a token.
+ * Valid Cross-Origin-Opener-Policy-Report-Only values include
+ * "unsafe-none", "same-origin-allow-popups" and "same-origin".
+ * These values may have a parameter specifying a string which
+ * represents the endpoint for violation reporting.
+ *
+ * @see {@link https://html.spec.whatwg.org/#cross-origin-opener-policy-report-only | Documentation → WHATWG HTML Standard}
+ */
+export type HttpFieldCrossOriginOpenerPolicyReportOnly =
+	'Cross-Origin-Opener-Policy-Report-Only'
 
 /**
  * The `Cross-Origin-Resource-Policy` response header can be
@@ -2824,7 +2847,9 @@ export type HttpField =
 	| HttpFieldCookie
 	| HttpFieldCookie2
 	| HttpFieldCrossOriginEmbedderPolicy
+	| HttpFieldCrossOriginEmbedderPolicyReportOnly
 	| HttpFieldCrossOriginOpenerPolicy
+	| HttpFieldCrossOriginOpenerPolicyReportOnly
 	| HttpFieldCrossOriginResourcePolicy
 	| HttpFieldDasl
 	| HttpFieldDav
