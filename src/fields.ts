@@ -2113,6 +2113,15 @@ export type HttpFieldSecFetchSite = 'Sec-Fetch-Site'
 export type HttpFieldSecFetchUser = 'Sec-Fetch-User'
 
 /**
+ * The `Sec-Purpose` HTTP request header specifies that the
+ * request serves one or more purposes other than requesting
+ * the resource for immediate use by the user.
+ *
+ * @see {@link https://fetch.spec.whatwg.org/#sec-purpose-header | Documentation → WHATWG Fetch Standard}
+ */
+export type HttpFieldSecPurpose = 'Sec-Purpose'
+
+/**
  * Once a client and server have negotiated the Token Binding
  * protocol with HTTP/1.1 or HTTP/2, clients MUST include a
  * Sec-Token-Binding header field in their HTTP requests and
@@ -2941,6 +2950,7 @@ export type HttpField =
 	| HttpFieldSecFetchMode
 	| HttpFieldSecFetchSite
 	| HttpFieldSecFetchUser
+	| HttpFieldSecPurpose
 	| HttpFieldSecTokenBinding
 	| HttpFieldSecWebSocketAccept
 	| HttpFieldSecWebSocketExtensions
@@ -3043,6 +3053,7 @@ export type HttpForbiddenRequestField =
 	| HttpFieldSecFetchMode
 	| HttpFieldSecFetchSite
 	| HttpFieldSecFetchUser
+	| HttpFieldSecPurpose
 	| HttpFieldSecTokenBinding
 	| HttpFieldSecWebSocketAccept
 	| HttpFieldSecWebSocketExtensions
