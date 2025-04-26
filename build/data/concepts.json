@@ -3267,6 +3267,19 @@
 				]
 			},
 			{
+				"value": "Sec-Purpose",
+				"concept": "https://webconcepts.info/concepts/http-header/",
+				"id": "https://webconcepts.info/concepts/http-header/Sec-Purpose",
+				"details": [
+					{
+						"description": "The `Sec-Purpose` HTTP request header specifies that the request serves one or more purposes other than requesting the resource for immediate use by the user.",
+						"documentation": "https://fetch.spec.whatwg.org/#sec-purpose-header",
+						"specification": "https://fetch.spec.whatwg.org/",
+						"spec-name": "WHATWG Fetch Standard"
+					}
+				]
+			},
+			{
 				"value": "Sec-Token-Binding",
 				"concept": "https://webconcepts.info/concepts/http-header/",
 				"id": "https://webconcepts.info/concepts/http-header/Sec-Token-Binding",
