@@ -816,7 +816,7 @@ export type HttpServerStatusCode =
 	| HttpStatusCode511
 
 /**
- * All HTTP status codes
+ * Response status codes for an HTTP request
  */
 export type HttpStatusCode =
 	| HttpInfoStatusCode

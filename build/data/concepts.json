@@ -1345,19 +1345,6 @@
 				]
 			},
 			{
-				"value": "Content-Dictionary",
-				"concept": "https://webconcepts.info/concepts/http-header/",
-				"id": "https://webconcepts.info/concepts/http-header/Content-Dictionary",
-				"details": [
-					{
-						"description": "",
-						"documentation": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4",
-						"specification": "https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary",
-						"spec-name": "Internet Draft ietf-httpbis-compression-dictionary"
-					}
-				]
-			},
-			{
 				"value": "Content-Digest",
 				"concept": "https://webconcepts.info/concepts/http-header/",
 				"id": "https://webconcepts.info/concepts/http-header/Content-Digest",

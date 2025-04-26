@@ -598,11 +598,6 @@ export type HttpFieldConnection = 'Connection'
 export type HttpFieldContentBase = 'Content-Base'
 
 /**
- * @see {@link https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4 | Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.4}
- */
-export type HttpFieldContentDictionary = 'Content-Dictionary'
-
-/**
  * The Content-Digest HTTP field can be used in requests and
  * responses to communicate digests that are calculated using a
  * hashing algorithm applied to the actual message content.
@@ -2796,7 +2791,6 @@ export type HttpField =
 	| HttpFieldClose
 	| HttpFieldConnection
 	| HttpFieldContentBase
-	| HttpFieldContentDictionary
 	| HttpFieldContentDigest
 	| HttpFieldContentDisposition
 	| HttpFieldContentEncoding
