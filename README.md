@@ -1,6 +1,6 @@
 # @nc/http-types
 
-A utility package of HTTP types for status codes, headers, and request methods.
+A utility package of HTTP types for status codes, fields, and request methods.
 
 ## Usage
 

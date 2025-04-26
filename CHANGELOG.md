@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.1.3 (2025-04-26)
+- Add author in LICENSE, fix minor issue in README.md
+
 ## v0.1.2 (2025-04-26)
 ### Features
 - Adds the following type aliases for HTTP fields:
