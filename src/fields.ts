@@ -3096,8 +3096,8 @@ export type HttpForbiddenRequestField =
  * HTTP fields forbidden from usage in HTTP responses
  */
 export type HttpForbiddenResponseField =
-	| HttpHeaderSetCookie
-	| HttpHeaderSetCookie2
+	| HttpFieldSetCookie
+	| HttpFieldSetCookie2
 
 /**
  * HTTP fields allowed for using within HTTP requests
