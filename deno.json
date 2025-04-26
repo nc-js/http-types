@@ -22,6 +22,7 @@
 	"imports": {
 		"@nc/typegen": "jsr:@nc/typegen@^0.1.1",
 		"@std/assert": "jsr:@std/assert@1",
+		"@std/testing": "jsr:@std/testing@^1.0.11",
 		"@std/text": "jsr:@std/text@^1.0.12",
 		"word-wrap": "npm:word-wrap@^1.2.5"
 	},

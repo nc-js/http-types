@@ -84,7 +84,6 @@ export const Ietf: UrlLabeler = {
 		const link = new URL(detail.documentation)
 		let label = detail['spec-name']
 
-		// eslint-disable-next-line security/detect-unsafe-regex
 		const regex = /#section-(\d+)((.\d*)*)/
 		const matches = regex.exec(link.hash)
 

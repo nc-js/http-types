@@ -2,7 +2,11 @@ import { toPascalCase } from '@std/text'
 import { union } from '@nc/typegen/composite'
 import { alias, exportThis } from '@nc/typegen/types'
 import { singleQuoteLit } from '@nc/typegen/strings'
-import { appendTextFile, generate } from './utils/generator.ts'
+import {
+	aliasWithDocBlock,
+	appendTextFile,
+	generate,
+} from './utils/generator.ts'
 import { httpDocs, isForbiddenRequestField } from './utils/http.ts'
 
 generate({
@@ -15,8 +19,8 @@ generate({
 		const forbiddenRequestFields: string[] = []
 
 		for (const conceptValue of concept.values) {
-			const fieldName = toPascalCase(conceptValue.value)
-			const fieldTypeName = `HttpField${fieldName}`
+			const fieldName = conceptValue.value
+			const fieldTypeName = `HttpField${toPascalCase(fieldName)}`
 			fieldTypes.push(fieldTypeName)
 
 			const typeAlias = exportThis(
@@ -28,7 +32,7 @@ generate({
 			}
 
 			const docBlock = httpDocs(conceptValue)
-			appendTextFile(destPath, `${docBlock}\n${typeAlias}\n\n`)
+			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
 		const topAlias = exportThis(alias(

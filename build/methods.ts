@@ -1,7 +1,11 @@
 import { union } from '@nc/typegen/composite'
 import { alias, exportThis } from '@nc/typegen/types'
 import { singleQuoteLit } from '@nc/typegen/strings'
-import { appendTextFile, generate } from './utils/generator.ts'
+import {
+	aliasWithDocBlock,
+	appendTextFile,
+	generate,
+} from './utils/generator.ts'
 import { getMethodTypeName, httpDocs } from './utils/http.ts'
 
 generate({
@@ -21,7 +25,7 @@ generate({
 				alias(methodTypeName, singleQuoteLit(methodName)),
 			)
 			const docBlock = httpDocs(conceptValue)
-			appendTextFile(destPath, `${docBlock}\n${typeAlias}\n\n`)
+			appendTextFile(destPath, aliasWithDocBlock(docBlock, typeAlias))
 		}
 
 		appendTextFile(
