@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.2 (Unreleased)
+## v0.1.2 (2025-04-26)
 ### Features
 - Adds the following type aliases for HTTP fields:
   - `HttpForbiddenResponseField`
