@@ -2,13 +2,6 @@
 
 A utility package of HTTP types for status codes, headers, and request methods.
 
-## Usage
-```ts
-import { add } from '@example/package'
-
-add(2, 2)
-```
-
 ## License
 
 This software is licensed under the MIT license ([`LICENSE`](./LICENSE) or
