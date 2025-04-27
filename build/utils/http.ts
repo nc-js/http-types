@@ -1,10 +1,9 @@
 import { toPascalCase } from '@std/text/to-pascal-case'
 import type { ConceptValue } from './concepts.ts'
-import { Ietf, UrlLabelProvider, W3Org, Wicg } from './url-labeler.ts'
+import { UrlLabelProvider } from './url-labeler.ts'
 import { DocBlock } from './docs.ts'
 
-const labelProvider = new UrlLabelProvider([W3Org, Wicg, Ietf])
-
+const labelProvider = new UrlLabelProvider()
 export const httpDocs = (conceptValue: ConceptValue): DocBlock => {
 	const docBlock = new DocBlock()
 	docBlock.summary = conceptValue.details[0].description
