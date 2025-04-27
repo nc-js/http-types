@@ -3,19 +3,14 @@ import w3 from '../data/w3.json' with { type: 'json' }
 
 export class UrlLabelProvider {
 	private providers: UrlLabeler[]
-	constructor(providers: UrlLabeler[] = []) {
+	constructor(providers: UrlLabeler[] = [W3Org, Wicg, Ietf]) {
 		this.providers = providers
-	}
-
-	registerProviders(providers: UrlLabeler[]) {
-		this.providers.push(...providers)
 	}
 
 	provideLabel(detail: ConceptValueDetail, includeFragment: boolean): string {
 		const link = new URL(detail.documentation)
-		const hostName = link.hostname
 		const provider = this.providers.find((provider) =>
-			provider.matchesHostName(hostName)
+			provider.matchesHostName(link.hostname)
 		)
 
 		if (provider) {
@@ -34,7 +29,7 @@ export type UrlLabeler = {
 	) => string
 }
 
-export const W3Org: UrlLabeler = {
+const W3Org: UrlLabeler = {
 	matchesHostName: (hostName: string): boolean =>
 		hostName === 'w3.org' || hostName === 'www.w3.org',
 
@@ -58,7 +53,7 @@ export const W3Org: UrlLabeler = {
 	},
 }
 
-export const Wicg: UrlLabeler = {
+const Wicg: UrlLabeler = {
 	matchesHostName: (hostName: string): boolean =>
 		hostName === 'wicg.github.io',
 
@@ -69,7 +64,7 @@ export const Wicg: UrlLabeler = {
 	},
 }
 
-export const Ietf: UrlLabeler = {
+const Ietf: UrlLabeler = {
 	matchesHostName: (hostName: string): boolean =>
 		hostName === 'datatracker.ietf.org' ||
 		hostName === 'httpwg.org',
