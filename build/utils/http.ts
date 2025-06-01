@@ -46,47 +46,28 @@ export const getMethodTypeName = (method: string): string => {
 export const isForbiddenRequestField = (field: string): boolean =>
 	field.startsWith('Proxy') ||
 	field.startsWith('Sec') ||
-	binarySearch(ForbiddenHttpRequestField, field)
+	/X(-HTTP)?-(Connect|Trace|Track)-Method(-Override)?/i.test(field) ||
+	ForbiddenHttpRequestField.has(field)
 
-const ForbiddenHttpRequestField = [
-	'Accept-Charset',
-	'Accept-Encoding',
-	'Access-Control-Request-Headers',
-	'Access-Control-Request-Method',
-	'Connection',
-	'Content-Length',
-	'Cookie',
-	'DNT',
-	'Date',
-	'Expect',
-	'Feature-Policy',
-	'Host',
-	'Keep-Alive',
-	'Origin',
-	'Referer',
-	'TE',
-	'Trailer',
-	'Transfer-Encoding',
-	'Upgrade',
-	'Via',
-]
-
-const binarySearch = (items: string[], target: string): boolean => {
-	let left = 0
-	let right = items.length - 1
-
-	while (left <= right) {
-		const mid = Math.floor((left + right) / 2)
-		const midValue = items[mid]
-
-		if (midValue === target) {
-			return true
-		} else if (midValue < target) {
-			left = mid + 1
-		} else {
-			right = mid - 1
-		}
-	}
-
-	return false
-}
+const ForbiddenHttpRequestField = new Map([
+	['Accept-Charset', true],
+	['Accept-Encoding', true],
+	['Access-Control-Request-Headers', true],
+	['Access-Control-Request-Method', true],
+	['Connection', true],
+	['Content-Length', true],
+	['Cookie', true],
+	['DNT', true],
+	['Date', true],
+	['Expect', true],
+	['Host', true],
+	['Keep-Alive', true],
+	['Origin', true],
+	['Permissions-Policy', true],
+	['Referer', true],
+	['TE', true],
+	['Trailer', true],
+	['Transfer-Encoding', true],
+	['Upgrade', true],
+	['Via', true],
+])

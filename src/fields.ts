@@ -3049,9 +3049,9 @@ export type HttpForbiddenRequestField =
 	| HttpFieldDnt
 	| HttpFieldDate
 	| HttpFieldExpect
-	| HttpFieldFeaturePolicy
 	| HttpFieldHost
 	| HttpFieldOrigin
+	| HttpFieldPermissionsPolicy
 	| HttpFieldProxyAuthenticate
 	| HttpFieldProxyAuthenticationInfo
 	| HttpFieldProxyAuthorization
