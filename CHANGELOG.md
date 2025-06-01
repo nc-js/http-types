@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.4 (Unreleased)
+## v0.1.4 (2025-05-31)
 - Fix: Adds HTTP response field `Permissions-Policy` to type union `HttpForbiddenRequestField`.
 
 ## v0.1.3 (2025-04-26)
